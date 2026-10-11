@@ -1,0 +1,394 @@
+{
+  "success": true,
+  "review_scope": {
+    "source_screenshots_visually_reviewed": 17,
+    "selected_screenshots": 6,
+    "videos": 2,
+    "capture_surface": "Game viewport only; no desktop recording",
+    "video_review": "Capture path inspected and representative menu, gameplay, boon and result frames reviewed. This is not a claim of manual frame-by-frame video review."
+  },
+  "checks": [
+    {
+      "passed": true,
+      "label": "Relative link: media/cover.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/cover.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/victory-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/victory-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/victory-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/victory-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/tartarus-combat.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/tartarus-combat.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/defeat-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/defeat-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/defeat-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/defeat-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/cover.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/cover.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/cover.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/cover.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/entrance.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/entrance.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/entrance.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/entrance.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/tartarus-combat.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/tartarus-combat.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/tartarus-combat.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/tartarus-combat.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/boon-selection.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/boon-selection.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/boon-selection.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/boon-selection.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/boss-fight.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/boss-fight.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/boss-fight.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/boss-fight.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/victory.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/victory.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: media/victory.png"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: media/victory.png"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: README.md"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: README.md"
+    },
+    {
+      "passed": true,
+      "label": "Relative link: privacy-check.json"
+    },
+    {
+      "passed": true,
+      "label": "Local target exists: privacy-check.json"
+    },
+    {
+      "passed": true,
+      "label": "Text privacy patterns absent: index.html"
+    },
+    {
+      "passed": true,
+      "label": "PNG signature: media/boon-selection.png"
+    },
+    {
+      "passed": true,
+      "label": "No text or EXIF metadata: media/boon-selection.png"
+    },
+    {
+      "passed": true,
+      "label": "PNG signature: media/boss-fight.png"
+    },
+    {
+      "passed": true,
+      "label": "No text or EXIF metadata: media/boss-fight.png"
+    },
+    {
+      "passed": true,
+      "label": "PNG signature: media/cover.png"
+    },
+    {
+      "passed": true,
+      "label": "No text or EXIF metadata: media/cover.png"
+    },
+    {
+      "passed": true,
+      "label": "Video metadata privacy patterns absent: media/defeat-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Video only; no audio or data tracks: media/defeat-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "PNG signature: media/entrance.png"
+    },
+    {
+      "passed": true,
+      "label": "No text or EXIF metadata: media/entrance.png"
+    },
+    {
+      "passed": true,
+      "label": "PNG signature: media/tartarus-combat.png"
+    },
+    {
+      "passed": true,
+      "label": "No text or EXIF metadata: media/tartarus-combat.png"
+    },
+    {
+      "passed": true,
+      "label": "Video metadata privacy patterns absent: media/victory-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "Video only; no audio or data tracks: media/victory-playthrough.mp4"
+    },
+    {
+      "passed": true,
+      "label": "PNG signature: media/victory.png"
+    },
+    {
+      "passed": true,
+      "label": "No text or EXIF metadata: media/victory.png"
+    },
+    {
+      "passed": true,
+      "label": "Text privacy patterns absent: README.md"
+    }
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 8097,
+      "sha256": "02d2a07c3ddf9c1e5f7e5787889fddd6f5065fd17624e2c15d0518f6c21db84d",
+      "private_pattern_matches": []
+    },
+    {
+      "path": "media/boon-selection.png",
+      "bytes": 858146,
+      "sha256": "ed8f95c41a3f2d11f4ba22cb6963728490d8a0e824c969dc464bb2ac1ee6e7ad",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "metadata_chunks": []
+    },
+    {
+      "path": "media/boss-fight.png",
+      "bytes": 779362,
+      "sha256": "3c190d57cc38b5e96b96ad4fa6dcf2987237714fc0747b1938542c96d7689fe2",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "metadata_chunks": []
+    },
+    {
+      "path": "media/cover.png",
+      "bytes": 1326765,
+      "sha256": "bc741d9de0a5c7e7ac7f1fc81784882f9893823a3e18a82ba104ff25825cdaf0",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "metadata_chunks": []
+    },
+    {
+      "path": "media/defeat-playthrough.mp4",
+      "bytes": 32940984,
+      "sha256": "6144ee9bd5fb06f844f7f3efc587553d8df87d8083b8b3269e439a65bfe698b9",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1440,
+            "height": 900,
+            "r_frame_rate": "30/1",
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "encoder": "Lavc62.28.101 libx264"
+            }
+          }
+        ],
+        "format": {
+          "duration": "43.500000",
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf62.12.101"
+          }
+        }
+      }
+    },
+    {
+      "path": "media/entrance.png",
+      "bytes": 737503,
+      "sha256": "72447ecdbb237eada5ebf517957cc963b38723b06e1484a4f2ff760a92b90581",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "metadata_chunks": []
+    },
+    {
+      "path": "media/tartarus-combat.png",
+      "bytes": 1003024,
+      "sha256": "201297c769fb74958c7e4e2211e699ed8734b82e8a50e070ae591dfe2236cc5e",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "metadata_chunks": []
+    },
+    {
+      "path": "media/victory-playthrough.mp4",
+      "bytes": 45570091,
+      "sha256": "792331723b0e60038fa35484ef78a3e690b7601d88cdb421af0d669b3adaf216",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1440,
+            "height": 900,
+            "r_frame_rate": "30/1",
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "encoder": "Lavc62.28.101 libx264"
+            }
+          }
+        ],
+        "format": {
+          "duration": "47.933333",
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf62.12.101"
+          }
+        }
+      }
+    },
+    {
+      "path": "media/victory.png",
+      "bytes": 395935,
+      "sha256": "3ed21d70244b90a920dd532c092d393cbe9f2c7c96f29a3b5ef1cb45101d5256",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "metadata_chunks": []
+    },
+    {
+      "path": "README.md",
+      "bytes": 2013,
+      "sha256": "6e88d7401b4ebc7ff2bdc4d46e5c33f0ceb20c475c1baa330f129a8a51f3e0c4",
+      "private_pattern_matches": []
+    }
+  ],
+  "excluded": "Raw execution manifests, logs, local settings, and development conversations are not included.",
+  "public_allowlist": [
+    "index.html",
+    "media/boon-selection.png",
+    "media/boss-fight.png",
+    "media/cover.png",
+    "media/defeat-playthrough.mp4",
+    "media/entrance.png",
+    "media/tartarus-combat.png",
+    "media/victory-playthrough.mp4",
+    "media/victory.png",
+    "README.md",
+    "privacy-check.json"
+  ]
+}

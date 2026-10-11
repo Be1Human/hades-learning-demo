@@ -1,0 +1,604 @@
+{
+  "hero": {
+    "model": "assets/characters/demo01/hero.glb",
+    "clips": {
+      "idle": {
+        "name": "idle",
+        "frames": 121,
+        "duration": 2.0,
+        "contact": null,
+        "contact_seconds": null,
+        "active_end_seconds": 0.08,
+        "recovery_end_seconds": 2.0,
+        "source_duration": 4.0,
+        "loop": true,
+        "source": "assets/characters/demo01/sources/source-0.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "R04 local cleanup applied; original-game fidelity unaccepted",
+        "revision": "R04",
+        "cleanup": "Captured slash_2 ready stance plus 22% source idle breathing; feet retain guard positions"
+      },
+      "run": {
+        "name": "run",
+        "frames": 37,
+        "duration": 0.6,
+        "contact": null,
+        "contact_seconds": null,
+        "active_end_seconds": 0.08,
+        "recovery_end_seconds": 0.6,
+        "source_duration": 0.6333333333333333,
+        "loop": true,
+        "source": "R04 run / Meshy bundled hero-run.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "implemented library adaptation; original-game fidelity pending review",
+        "revision": "R05",
+        "method": "Captured running cycle retained; sword arm constrained to a trailing carry, left arm still counterbalances"
+      },
+      "slash_1": {
+        "name": "slash_1",
+        "frames": 23,
+        "duration": 0.36666666666666664,
+        "contact": 0.12,
+        "contact_seconds": 0.12,
+        "active_end_seconds": 0.2,
+        "recovery_end_seconds": 0.36666666666666664,
+        "source_duration": 2.2,
+        "loop": false,
+        "source": "assets/characters/demo01/sources/source-242.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            0.23,
+            0.32
+          ],
+          [
+            0.34,
+            0.58
+          ],
+          [
+            0.56,
+            0.74
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "library-retarget preview; fidelity unaccepted"
+      },
+      "slash_2": {
+        "name": "slash_2",
+        "frames": 25,
+        "duration": 0.4,
+        "contact": 0.144,
+        "contact_seconds": 0.144,
+        "active_end_seconds": 0.22399999999999998,
+        "recovery_end_seconds": 0.4,
+        "source_duration": 1.5,
+        "loop": false,
+        "source": "assets/characters/zagreus/r02/source-slash219.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            0.2
+          ],
+          [
+            0.3,
+            0.29
+          ],
+          [
+            0.36,
+            0.3667
+          ],
+          [
+            0.53,
+            0.48
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "library-retarget preview; fidelity unaccepted"
+      },
+      "thrust": {
+        "name": "thrust",
+        "frames": 28,
+        "duration": 0.45,
+        "contact": 0.15,
+        "contact_seconds": 0.15,
+        "active_end_seconds": 0.22999999999999998,
+        "recovery_end_seconds": 0.45,
+        "source_duration": 3.0,
+        "loop": false,
+        "source": "assets/characters/demo01/sources/source-240.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            0.22,
+            0.3
+          ],
+          [
+            0.33,
+            0.53
+          ],
+          [
+            0.52,
+            0.61
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "R04 local cleanup applied; original-game fidelity unaccepted",
+        "revision": "R04",
+        "cleanup": "After contact, arm recovers to existing low sword hold, removing overhead second cut"
+      },
+      "dash": {
+        "name": "dash",
+        "frames": 13,
+        "duration": 0.2,
+        "contact": null,
+        "contact_seconds": null,
+        "active_end_seconds": 0.08,
+        "recovery_end_seconds": 0.2,
+        "source_duration": 0.6333333333333333,
+        "loop": false,
+        "source": "R04 run, normalized phase 0.50–0.66",
+        "phases": [
+          [
+            0,
+            0.15
+          ],
+          [
+            1,
+            0.3
+          ]
+        ],
+        "status": "implemented library adaptation; original-game fidelity pending review",
+        "revision": "R05",
+        "method": "Airborne phase cropped from captured run, lower pelvis and forward torso cleanup; sword trails behind"
+      },
+      "dash_strike": {
+        "name": "dash_strike",
+        "frames": 20,
+        "duration": 0.31666666666666665,
+        "contact": 0.09,
+        "contact_seconds": 0.09,
+        "active_end_seconds": 0.16999999999999998,
+        "recovery_end_seconds": 0.31666666666666665,
+        "source_duration": 3.0,
+        "loop": false,
+        "source": "assets/characters/demo01/sources/source-240.glb",
+        "phases": [
+          [
+            0,
+            0.3
+          ],
+          [
+            0.2,
+            0.48
+          ],
+          [
+            0.28,
+            0.53
+          ],
+          [
+            0.58,
+            0.64
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "R04 local cleanup applied; original-game fidelity unaccepted",
+        "revision": "R04",
+        "cleanup": "After contact, arm recovers to existing low sword hold, removing overhead second cut"
+      },
+      "nova": {
+        "name": "nova",
+        "frames": 42,
+        "duration": 0.6833333333333333,
+        "contact": 0.32,
+        "contact_seconds": 0.32,
+        "active_end_seconds": 0.4,
+        "recovery_end_seconds": 0.6833333333333333,
+        "source_duration": 3.0,
+        "loop": false,
+        "source": "R04 nova / source-127.glb + R04 combat idle",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            0.22,
+            0.2
+          ],
+          [
+            0.37,
+            0.41
+          ],
+          [
+            0.47,
+            0.58
+          ],
+          [
+            0.6,
+            0.73
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "implemented library adaptation; original-game fidelity pending review",
+        "revision": "R05",
+        "cleanup": "0.29m short hop; planted landing feet and hand IK keep sword tip near floor",
+        "method": "previous R04 hop/contact retained; entry and recovery blend into previous combat-ready guard"
+      },
+      "hurt": {
+        "name": "hurt",
+        "frames": 19,
+        "duration": 0.3,
+        "contact": 0.06,
+        "contact_seconds": 0.06,
+        "active_end_seconds": 0.14,
+        "recovery_end_seconds": 0.3,
+        "source_duration": 1.6333333333333333,
+        "loop": false,
+        "source": "assets/characters/demo01/sources/source-178.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            0.24
+          ],
+          [
+            0.6,
+            0.61
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "library-retarget preview; fidelity unaccepted"
+      },
+      "death": {
+        "name": "death",
+        "frames": 67,
+        "duration": 1.1,
+        "contact": null,
+        "contact_seconds": null,
+        "active_end_seconds": 0.08,
+        "recovery_end_seconds": 1.1,
+        "source_duration": 2.966666666666667,
+        "loop": false,
+        "source": "assets/characters/demo01/sources/source-8.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "library-retarget preview; fidelity unaccepted"
+      },
+      "run_start": {
+        "name": "run_start",
+        "frames": 13,
+        "duration": 0.2,
+        "revision": "R05",
+        "source": "R04 combat idle + R05 held-sword run",
+        "method": "Captured running push-off phase 0.667–1.0 blended from combat guard; endpoint equals run frame 1",
+        "status": "implemented library adaptation; original-game fidelity pending review",
+        "loop": false,
+        "category": "locomotion_transition",
+        "contact_seconds": null,
+        "active_end_seconds": null,
+        "recovery_end_seconds": 0.2,
+        "root_heading": "runtime-controlled",
+        "exit_loop_phase": 0
+      },
+      "run_stop": {
+        "name": "run_stop",
+        "frames": 12,
+        "duration": 0.18333333333333332,
+        "revision": "R05",
+        "source": "R05 held-sword run phase 0–0.306 + R04 combat idle",
+        "method": "Captured first support/step phase blended into combat guard; no invented replacement body motion",
+        "status": "implemented library adaptation; original-game fidelity pending review",
+        "loop": false,
+        "category": "locomotion_transition",
+        "contact_seconds": null,
+        "active_end_seconds": null,
+        "recovery_end_seconds": 0.18333333333333332,
+        "root_heading": "runtime-controlled",
+        "exit_loop_phase": 0
+      },
+      "turn_left": {
+        "name": "turn_left",
+        "frames": 15,
+        "duration": 0.23333333333333334,
+        "revision": "R05",
+        "source": "source-240.glb normalized phase 0.15–0.32",
+        "method": "Captured pivot step cropped from source 240; weapon arm removed, net yaw supplied by runtime; start/end blend to run phase 0",
+        "status": "implemented library adaptation; original-game fidelity pending review",
+        "loop": false,
+        "category": "locomotion_transition",
+        "contact_seconds": null,
+        "active_end_seconds": null,
+        "recovery_end_seconds": 0.23333333333333334,
+        "root_heading": "runtime-controlled",
+        "exit_loop_phase": 0
+      },
+      "turn_right": {
+        "name": "turn_right",
+        "frames": 15,
+        "duration": 0.23333333333333334,
+        "revision": "R05",
+        "source": "source-240.glb normalized phase 0.65–0.90",
+        "method": "Captured pivot step cropped from source 240; weapon arm removed, net yaw supplied by runtime; start/end blend to run phase 0",
+        "status": "implemented library adaptation; original-game fidelity pending review",
+        "loop": false,
+        "category": "locomotion_transition",
+        "contact_seconds": null,
+        "active_end_seconds": null,
+        "recovery_end_seconds": 0.23333333333333334,
+        "root_heading": "runtime-controlled",
+        "exit_loop_phase": 0
+      }
+    },
+    "weapon_socket": {
+      "bone": "RightHand",
+      "trail_tip_bone_local": [
+        0.5970164466993682,
+        0.09516790074975301,
+        0.9886484647454026
+      ],
+      "source_bind_tip": [
+        -0.9120000004768372,
+        1.5169999599456787,
+        1.1170001029968262
+      ],
+      "source": "Actual authored blade tip transformed by skin inverse bind matrix"
+    },
+    "corrections": [
+      "P04 contact lowered with captured feet locked",
+      "Thrust retains library full-body motion; local right-arm IK aligns forward reach",
+      "World horizontal root movement constrained to avoid visual/collision separation",
+      "Captured slash_2 ready stance plus 22% source idle breathing; feet retain guard positions",
+      "After contact, arm recovers to existing low sword hold, removing overhead second cut",
+      "After contact, arm recovers to existing low sword hold, removing overhead second cut",
+      "0.29m short hop; planted landing feet and hand IK keep sword tip near floor"
+    ],
+    "revision": "R05",
+    "sha256": "cf4f19e112dd4e470a4e7a15b13d5db27f7e4bb7c9dd324dd5178b68795e333a",
+    "authoring": "authoring/demo01-hero.blend",
+    "archive": "authoring/demo01-r03/archive.json",
+    "review": "evidence/demo01/animation/r04/index.html",
+    "source_pipeline": [
+      "tools/author_demo01_library.py produces archived R03 base",
+      "tools/author_demo01_r04.py produces isolated previous R04 candidate",
+      "previous R04 candidate promoted; do not regenerate runtime from R03-only tool"
+    ],
+    "base_keyframe_evidence": "evidence/demo01/animation/hero/<clip>/ contains R03 base Blender keyframes; use R04 review and final Godot editor captures for promoted clips",
+    "status": "implemented revision; original-game fidelity pending review"
+  },
+  "enemy": {
+    "model": "assets/characters/demo01/enemy.glb",
+    "clips": {
+      "idle": {
+        "name": "idle",
+        "frames": 145,
+        "duration": 2.4,
+        "contact": null,
+        "contact_seconds": null,
+        "active_end_seconds": 0.08,
+        "recovery_end_seconds": 2.4,
+        "source_duration": 4.0,
+        "loop": true,
+        "source": "assets/characters/demo01/sources/source-0.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "library-retarget preview; fidelity unaccepted"
+      },
+      "run": {
+        "name": "run",
+        "frames": 64,
+        "duration": 1.05,
+        "contact": null,
+        "contact_seconds": null,
+        "active_end_seconds": 0.08,
+        "recovery_end_seconds": 1.05,
+        "source_duration": 1.0166666666666666,
+        "loop": true,
+        "source": "assets/characters/demo01/sources/enemy-walk.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "library-retarget preview; fidelity unaccepted"
+      },
+      "club_attack": {
+        "name": "club_attack",
+        "frames": 70,
+        "duration": 1.15,
+        "contact": 0.72,
+        "contact_seconds": 0.72,
+        "active_end_seconds": 0.82,
+        "recovery_end_seconds": 1.15,
+        "source_duration": 1.8166666666666667,
+        "loop": false,
+        "source": "assets/characters/demo01/sources/source-128.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            0.45,
+            0.5
+          ],
+          [
+            0.56,
+            0.67
+          ],
+          [
+            0.64,
+            0.78
+          ],
+          [
+            0.79,
+            0.96
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "implemented library adaptation; original-game fidelity pending review",
+        "revision": "R05",
+        "cleanup": "Preserved mature source right-arm/elbow and body trajectory; bounded forearm axial roll and grip orientation, offhand clears spikes. Global hand step <=18deg and local hand step <=25deg guards. Removed rejected right-arm position IK.",
+        "evidence": "evidence/character-r05/assets/enemy-grip/club/after-action/preview.mp4"
+      },
+      "hurt": {
+        "name": "hurt",
+        "frames": 20,
+        "duration": 0.31666666666666665,
+        "contact": 0.06,
+        "contact_seconds": 0.06,
+        "active_end_seconds": 0.14,
+        "recovery_end_seconds": 0.31666666666666665,
+        "source_duration": 1.6333333333333333,
+        "loop": false,
+        "source": "assets/characters/demo01/sources/source-178.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            0.24
+          ],
+          [
+            0.6,
+            0.61
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "library-retarget preview; fidelity unaccepted"
+      },
+      "death": {
+        "name": "death",
+        "frames": 76,
+        "duration": 1.25,
+        "contact": null,
+        "contact_seconds": null,
+        "active_end_seconds": 0.08,
+        "recovery_end_seconds": 1.25,
+        "source_duration": 2.966666666666667,
+        "loop": false,
+        "source": "assets/characters/demo01/sources/source-8.glb",
+        "phases": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "library-retarget preview; fidelity unaccepted"
+      }
+    },
+    "corrections": [
+      "Generated trousers and boots removed; replaced with pleated grey spectral hem",
+      "Upper body widened 1.18x; upper-body walking cycle remains while lower body floats",
+      "Club attack recovery blends back to captured starting guard"
+    ],
+    "revision": "R05",
+    "sha256": "7e381d575594690a5e4c0c922236dabad8b4e6ac9c7f6660229ca5af51d85670",
+    "status": "implemented library adaptation; original-game fidelity pending review",
+    "weapon_socket": {
+      "bone": "RightHand",
+      "position": [
+        0.055,
+        0.105,
+        -0.17
+      ],
+      "rotation_euler": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "grip_radius": 0.045,
+      "grip_height": 0.73,
+      "wrap_radius": 0.05,
+      "trail_tip_local": [
+        0,
+        1.3,
+        0
+      ],
+      "source": "evidence/character-r05/assets/enemy-grip/action-report.json"
+    },
+    "mesh_cleanup": "Volume-preserving local grip mesh bend; runtime club shaft across palm instead of along finger axis",
+    "continuity_audit": "evidence/character-r05/assets/enemy-grip/continuity-final.json"
+  }
+}

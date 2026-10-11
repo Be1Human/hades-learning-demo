@@ -1,0 +1,109 @@
+{
+  "version": "r03",
+  "assets": [
+    {
+      "id": "menu-logo-v01",
+      "label": "主菜单标志",
+      "source": "docs/design/img/hades/original-main-menu.jpg",
+      "sourceSha256": "652308509127c81f80f4e64600eecec0f398463b8d9f208e50c3b9ff31d0a152",
+      "sourceRegion": [
+        100,
+        48,
+        365,
+        144
+      ],
+      "sourceSize": [
+        1920,
+        1080
+      ],
+      "raster": "assets/ui/r03/raster/menu-logo-v01.png",
+      "vector": "assets/ui/r03/vector/menu-logo-v01.svg",
+      "rerender": "assets/ui/r03/rerender/menu-logo-v01.png",
+      "rasterSize": [
+        2172,
+        724
+      ],
+      "rasterSha256": "9aab0d5a7225c2a0010479e50b1dc3649b8ab6690829a22cd365401929d2e645",
+      "contentBounds": [
+        143,
+        67,
+        1898,
+        613
+      ],
+      "prompt": "docs/ui/evidence/r03/prompts/jobs.json",
+      "conversionReport": "docs/ui/evidence/r03/menu-logo-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "note": "已检查实际透明通道及轮廓；原图还原稿，允许描摹。Logo磨损纹理及背景人物位置仍有生成偏差，最终相似度单独记录。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "evidence": "docs/ui/evidence/r03/review-menu-logo-v01.png",
+        "note": "透明棋盘格三栏已目视检查；SVG由原PNG颜色与alpha路径组成，无嵌入位图。小比例直接SVG采样略有颗粒，默认使用全尺寸回渲染缓存。"
+      },
+      "traceParameters": {
+        "mode": "polygon",
+        "filter_speckle": 0,
+        "layer_difference": 2
+      },
+      "metrics": {
+        "rgbMae": 0.4495682328630148,
+        "alphaMae": 0.016487740275753414,
+        "comparedAgainst": "restored PNG; not original art similarity"
+      },
+      "vectorSha256": "84c2afbfa264079339cb94df7d85214781a9eb57a51c12c3365daede9adb8355"
+    },
+    {
+      "id": "health-fill-v01",
+      "label": "生命填充",
+      "source": "docs/design/img/hades/original-steam-00.jpg",
+      "sourceSha256": "e52c7a48405b5a280603ebeb980b63f33454bc914c9fb777fb82a71835d71b47",
+      "sourceRegion": [
+        55,
+        1011,
+        69,
+        19
+      ],
+      "sourceSize": [
+        1920,
+        1080
+      ],
+      "raster": "assets/ui/r03/raster/health-fill-v01.png",
+      "vector": "assets/ui/r03/vector/health-fill-v01.svg",
+      "rerender": "assets/ui/r03/rerender/health-fill-v01.png",
+      "rasterSize": [
+        1672,
+        941
+      ],
+      "rasterSha256": "0ee31b63968ba9066651d406bb56e0bc3102e2f635289ac9ee3fc371d3f7ae88",
+      "contentBounds": [
+        36,
+        449,
+        1601,
+        43
+      ],
+      "prompt": "docs/ui/evidence/r03/prompts/jobs.json",
+      "conversionReport": "docs/ui/evidence/r03/health-fill-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "note": "已检查实际透明通道及轮廓；原图还原稿，允许描摹。Logo磨损纹理及背景人物位置仍有生成偏差，最终相似度单独记录。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "evidence": "docs/ui/evidence/r03/review-health-fill-v01.png",
+        "note": "透明棋盘格三栏已目视检查；SVG由原PNG颜色与alpha路径组成，无嵌入位图。小比例直接SVG采样略有颗粒，默认使用全尺寸回渲染缓存。"
+      },
+      "traceParameters": {
+        "mode": "polygon",
+        "filter_speckle": 0,
+        "layer_difference": 2
+      },
+      "metrics": {
+        "rgbMae": 2.1206884638605525,
+        "alphaMae": 0.0018283531177513985,
+        "comparedAgainst": "restored PNG; not original art similarity"
+      },
+      "vectorSha256": "4c7d4bfa51550e791660082cd86b74379c01689d160f22f3e6e7304aa69cf6cc"
+    }
+  ]
+}

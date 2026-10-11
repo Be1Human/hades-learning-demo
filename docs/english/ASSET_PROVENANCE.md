@@ -1,0 +1,62 @@
+# Asset provenance and scope
+
+[Project overview](../../README.md) · [LICENSE](../../LICENSE) · [NOTICE](../../NOTICE.md)
+
+This is an unofficial **non-commercial Hades recreation learning project**, not an official product or an affiliated/endorsed Supergiant Games project. Hades, its characters, and associated trademarks belong to Supergiant Games and the respective rights holders.
+
+The recorded visual-production workflow uses public online videos and screenshots as references, followed by AI-assisted generation and manual/procedural work. It does **not** involve cracking, DRM circumvention, or extracting assets from original game packages. This describes the recorded method, not ownership of the referenced Hades designs or official permission/endorsement.
+
+The project's [non-commercial source-available license](../../LICENSE) applies only within its stated scope. Third-party components retain their own terms in [NOTICE](../../NOTICE.md). The repository is not presented as MIT-licensed or OSI-approved open source, and its license does not grant rights over original Hades intellectual property.
+
+## Project-authored implementation
+
+Gameplay code, menu integration, room builders, shaders, event-driven combat effects, and relevant utilities were implemented for this project. Room geometry and many effects are authored in code. Character assets received local mesh, material, rig, pose, animation-timing, and weapon changes.
+
+Authorship of these changes does not make every underlying model, reference design, font, or recorded sound project-original. Keep their sources distinct when extending the project.
+
+## AI-assisted characters and textures
+
+The recorded workflow includes generated character-reference imagery and material textures, a previously Meshy-rigged character, adapted animation-library clips, and local Blender/Godot changes. AI assistance, retargeting, and cleanup are part of the history; these resources are not described as extracted original-game models or motion clips.
+
+The runtime animation manifest identifies clips, timing, and adaptation details. The hero has ten core actions and four locomotion transitions; the base enemy has five clips. Later work revised the enemy's short waist and segmented hem while preserving the available skeleton and motion data.
+
+Witch and boss visuals reuse available rig variants; the skull uses scene geometry. Original-character fidelity remains unaccepted. Service-specific and library terms are separate from the code license. Generated or adapted content is not uniformly claimed to be CC0.
+
+## Reference-derived UI and environment
+
+The UI workflow includes AI-assisted restoration/reconstruction from public screenshots, followed by raster review, SVG tracing, and cached rerendering. Recorded prompts target reference-based menu backgrounds, the HADES logo, portraits, and interface elements. These are reference-derived recreation assets, not unrelated original designs. Raster-to-SVG conversion does not erase their provenance.
+
+The twin-pit environment is the principal original-image comparison layout. The entrance hall and colonnade are new arrangements using the same architectural language; they are not asserted to be exact copies of specific original rooms.
+
+Full reference captures and internal prompt/review histories remain outside the public snapshot. Screenshots in the README and `docs/public-demo/media/` show the actual demo, not the original game. Excluding raw reference screenshots from an executable does not erase the reference-derived origin of some runtime artwork.
+
+## Third-party audio: CC0 samples and project layering
+
+The recorded audio source register identifies these collections as **CC0**:
+
+- [Kenney RPG Audio](https://kenney.nl/assets/rpg-audio).
+- [Kenney Impact Sounds](https://kenney.nl/assets/impact-sounds).
+- [Swishes by artisticdude](https://opengameart.org/content/swishes-sound-pack).
+- [Sword attacks and clashes by StarNinjas](https://opengameart.org/content/20-sword-sound-effects-attacks-and-clashes).
+
+Game audio uses recorded sample layers, variants, project processing, and ambience. It is **not all AI-generated**. Per-cue mappings and retained public source records document the composition. Original Hades footage served as a comparison reference, not the soundtrack or sound samples packaged for gameplay.
+
+CC0 material retains its own terms. The project's non-commercial condition does not rewrite an upstream CC0 sound collection's independent license.
+
+## Fonts: OFL and installed system fonts
+
+Bundled Latin fonts are Alegreya Sans, Alegreya Sans SC, and Crimson Text, with their **SIL Open Font License** notices retained. These fonts are not AI-generated. Their own licenses apply independently of the project license.
+
+Chinese labels use an existing **SystemFont** configured for Microsoft YaHei or Noto Sans CJK SC. No Windows font was copied into the project, and no new embedded CJK font was added. The operating system must provide an appropriate installed font. A successful check on the development machine does not mean every bare Windows installation has the same fonts.
+
+## AE research boundary
+
+The After Effects study used a **self-authored diagnostic sequence, not an AE render**. It explored transparent sequences, atlases, and Godot playback. It did not verify a supplied production AE library, plugin dependencies, library redistribution terms, HDR exports, or production-game performance for those unknown assets.
+
+The diagnostic ring is not part of final combat and is not presented as a production AE asset. A real library remains unverified until its files, export conditions, and terms are available. The research is not a runtime dependency.
+
+## Verification and visual acceptance
+
+Provenance, functional verification, and visual acceptance are separate. Hashes and test runs identify versions; they do not establish original-game fidelity or settle rights.
+
+Known visual gaps include architectural/texture differences, character and boss variants, held-club/hem intersections, some foot drift, and a results transition that can freeze a falling enemy before its final pose. Public media illustrates the delivered demo without claiming these differences are eliminated.

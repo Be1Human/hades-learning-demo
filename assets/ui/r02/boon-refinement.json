@@ -1,0 +1,32 @@
+{
+  "revision": "refine-01",
+  "portrait": {
+    "id": "portrait-zagreus-v04",
+    "rect": [
+      90,
+      254,
+      475,
+      898
+    ],
+    "brightness": 0.88
+  },
+  "rays": {
+    "id": "athena-rays-v03",
+    "rect": [
+      -10,
+      -29,
+      600,
+      370
+    ],
+    "opacity": 0.9
+  },
+  "raysMapping": "Full PNG1599x984 to600x370 then translated(-10,-29); layoutBounds uses the full canvas to preserve low-alpha fan. Original source center194,168; restoration positions are approximate.",
+  "fonts": {
+    "body": "assets/ui/r02/fonts/AlegreyaSans-Regular.ttf",
+    "bold": "assets/ui/r02/fonts/AlegreyaSans-Bold.ttf",
+    "value": "assets/ui/r02/fonts/AlegreyaSans-ExtraBoldItalic.ttf",
+    "title": "assets/ui/r02/fonts/AlegreyaSansSC-Regular.ttf",
+    "tooltip": "assets/ui/r02/fonts/AlegreyaSansSC-Bold.ttf",
+    "heading": "assets/ui/r02/fonts/CrimsonText-Regular.ttf"
+  }
+}

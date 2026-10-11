@@ -1,0 +1,13 @@
+name: Validate public repository
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Validate resources, docs, licenses, and privacy patterns
+        run: python3 tools/validate_public_repo.py

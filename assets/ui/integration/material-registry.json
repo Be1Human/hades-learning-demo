@@ -1,0 +1,1018 @@
+{
+  "version": "r02",
+  "date": "2026-10-11",
+  "scope": "R02 单件转换与祝福页精修 01；不等于全部核心 UI 完成",
+  "assets": [
+    {
+      "id": "boon-header-v01",
+      "label": "祝福标题横幅",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        285,
+        18,
+        1590,
+        192
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/boon-header-v01.png",
+      "vector": "assets/ui/r02/vector/boon-header-v01.svg",
+      "rerender": "assets/ui/r02/rerender/boon-header-v01.png",
+      "prompt": "docs/ui/evidence/r02/boon-header-v01-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/boon-header-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "扇形端饰、垂落黑纹、灰橄榄色主板与卷叶横梁已保留；去除文字和彩光。遮挡部分为推定还原。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-boon-header-v01.png",
+        "note": "已视觉检查 PNG 与 SVG 回渲染：轮廓、纹样、主要配色可用于下一轮拼接对齐。浏览器及 Godot 均能加载；放大纹理有轻微量化，最终原作相似度需页面复核。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        2079,
+        756
+      ],
+      "contentBounds": [
+        1,
+        256,
+        2077,
+        233
+      ],
+      "rasterSha256": "0b90961254635985506ecf17dabd077086905704c2c4e9fae172c65b941d48ee",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "metrics": {
+        "rgbMae": 3.412900171850256,
+        "opaqueRgbMae": 3.5037782175744305,
+        "alphaMae": 0.0012052567909870853,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 6.424842993581617,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "dialogue-paper-v01",
+      "label": "对话纸面",
+      "source": "docs/design/img/hades/press-4K_Hades_MegaeraDialogue.jpg",
+      "sourceRegion": [
+        1300,
+        1260,
+        2010,
+        740
+      ],
+      "sourceSize": [
+        3840,
+        2160
+      ],
+      "raster": "assets/ui/r02/raster/dialogue-paper-v01.png",
+      "vector": "assets/ui/r02/vector/dialogue-paper-v01.svg",
+      "rerender": "assets/ui/r02/rerender/dialogue-paper-v01.png",
+      "prompt": "docs/ui/evidence/r02/dialogue-paper-v01-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/dialogue-paper-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "保留梯形、黑金框、象牙纸面与角落折痕；去除对白、姓名牌、角色与箭头。遮挡处为推定补全。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-dialogue-paper-v01.png",
+        "note": "已视觉检查 PNG 与 SVG 回渲染：轮廓、纹样、主要配色可用于下一轮拼接对齐。浏览器及 Godot 均能加载；放大纹理有轻微量化，最终原作相似度需页面复核。"
+      },
+      "assembly": {
+        "status": "ready_for_alignment"
+      },
+      "rasterSize": [
+        2135,
+        736
+      ],
+      "contentBounds": [
+        49,
+        12,
+        2031,
+        681
+      ],
+      "rasterSha256": "f133221e58a3e0bf9704a4acdc5c6d16707f43fae39633f6eb3810ac09300173",
+      "sourceSha256": "329b080e225c48481216985514c7953688b443b4dfed4b4caf9958b75ebd333b",
+      "metrics": {
+        "rgbMae": 2.994905890367115,
+        "opaqueRgbMae": 3.024323063513331,
+        "alphaMae": 0.00022919038496511075,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 5.839455456931722,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "boon-panel-v01",
+      "label": "祝福主面板",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        450,
+        173,
+        1155,
+        850
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/boon-panel-v01.png",
+      "vector": "assets/ui/r02/vector/boon-panel-v01.svg",
+      "rerender": "assets/ui/r02/rerender/boon-panel-v01.png",
+      "prompt": "docs/ui/evidence/r02/boon-panel-v01-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/boon-panel-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "保留暗斜面、回纹立边与底部细台阶；去除卡片与文字。左边遮挡为推定还原。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-boon-panel-v01.png",
+        "note": "已视觉检查 PNG 与 SVG 回渲染：轮廓、纹样、主要配色可用于下一轮拼接对齐。浏览器及 Godot 均能加载；放大纹理有轻微量化，最终原作相似度需页面复核。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        1464,
+        1074
+      ],
+      "contentBounds": [
+        35,
+        30,
+        1398,
+        988
+      ],
+      "rasterSha256": "7c923a5cc448b02b7ed9bd4c5baad3f757d58df63646ab714fc8a2a484652ac3",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "metrics": {
+        "rgbMae": 1.6090095249243117,
+        "opaqueRgbMae": 1.5803629381184057,
+        "alphaMae": 0.00014487242172361964,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 2.5079463310665524,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "tooltip-v01",
+      "label": "机制说明卡",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        1512,
+        307,
+        457,
+        176
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/tooltip-v01.png",
+      "vector": "assets/ui/r02/vector/tooltip-v01.svg",
+      "rerender": "assets/ui/r02/rerender/tooltip-v01.png",
+      "prompt": "docs/ui/evidence/r02/tooltip-v01-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/tooltip-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "保留黄色边框、小卷钩、非正矩形轮廓与暗斜纹；去除动态文字。页面中需继续复核线宽。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-tooltip-v01.png",
+        "note": "已视觉检查 PNG 与 SVG 回渲染：轮廓、纹样、主要配色可用于下一轮拼接对齐。浏览器及 Godot 均能加载；放大纹理有轻微量化，最终原作相似度需页面复核。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        2003,
+        785
+      ],
+      "contentBounds": [
+        40,
+        69,
+        1918,
+        646
+      ],
+      "rasterSha256": "778bbc2bc672381f89afd65eff1b9730ad6f18725abaace15bf39f7cea866a35",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "metrics": {
+        "rgbMae": 1.4104868007669522,
+        "opaqueRgbMae": 1.3985639560240546,
+        "alphaMae": 6.412793184888422e-05,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 1.5921446658639422,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "nameplate-v01",
+      "label": "墨纪拉姓名牌",
+      "source": "docs/design/img/hades/press-4K_Hades_MegaeraDialogue.jpg",
+      "sourceRegion": [
+        1320,
+        1120,
+        1000,
+        400
+      ],
+      "sourceSize": [
+        3840,
+        2160
+      ],
+      "raster": "assets/ui/r02/raster/nameplate-v01.png",
+      "vector": "assets/ui/r02/vector/nameplate-v01.svg",
+      "rerender": "assets/ui/r02/rerender/nameplate-v01.png",
+      "prompt": "docs/ui/evidence/r02/nameplate-v01-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/nameplate-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "保留左侧红叶、不对称顶部笔触与灰底金边；已去除姓名和称号。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-nameplate-v01.png",
+        "note": "已视觉检查 PNG 与 SVG 回渲染：轮廓、纹样、主要配色可用于下一轮拼接对齐。浏览器及 Godot 均能加载；放大纹理有轻微量化，最终原作相似度需页面复核。"
+      },
+      "assembly": {
+        "status": "ready_for_alignment"
+      },
+      "rasterSize": [
+        2059,
+        764
+      ],
+      "contentBounds": [
+        50,
+        91,
+        1879,
+        579
+      ],
+      "rasterSha256": "1fba16974c3339071d1b455b3e70923ceff24defe6fb1a5e41afa2a470f909b2",
+      "sourceSha256": "329b080e225c48481216985514c7953688b443b4dfed4b4caf9958b75ebd333b",
+      "metrics": {
+        "rgbMae": 2.6901671921272072,
+        "opaqueRgbMae": 2.768160962657507,
+        "alphaMae": 0.03069447812458702,
+        "silhouetteIou": 0.9999934477616244,
+        "pixelsOver16RgbErrorPercent": 5.622595077438667,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "health-track-v04",
+      "label": "生命槽底框",
+      "source": "docs/design/img/hades/original-steam-02.jpg",
+      "sourceRegion": [
+        34,
+        989,
+        344,
+        59
+      ],
+      "sourceSize": [
+        1920,
+        1080
+      ],
+      "raster": "assets/ui/r02/raster/health-track-v04.png",
+      "vector": "assets/ui/r02/vector/health-track-v04.svg",
+      "rerender": "assets/ui/r02/rerender/health-track-v04.png",
+      "prompt": "docs/ui/evidence/r02/health-track-v04-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/health-track-v04-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex 自主视觉复核",
+        "note": "v04 移除粗亮倒角，收小叶形端饰为卷纹；保留薄金线与暗槽。主体比例仍需按原作区域归一化，端饰笔触和金色饱和度列为 HUD 页对齐项。仅允许转换，不代表 HUD 页面美术完成。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex 自主视觉复核",
+        "evidence": "docs/ui/evidence/r02/review-health-track-v04.png",
+        "note": "PNG/SVG回渲染保留细金线、暗槽与小端饰，允许进入后续HUD坐标对齐；整体比例和饱和度仍需页面复核。"
+      },
+      "assembly": {
+        "status": "ready_for_alignment"
+      },
+      "rasterSize": [
+        1254,
+        1254
+      ],
+      "contentBounds": [
+        34,
+        561,
+        1185,
+        126
+      ],
+      "rasterSha256": "06ceb2fd4aca8d050521edaecbd75d9c2dc76d7d51c7ed85f87485ff74214577",
+      "sourceSha256": "0a21e4b7fd5b288879c712578eaf712a3c7ae20d4a56cfb4227724ec943ee5b3",
+      "geometryNormalization": {
+        "method": "affine source-rectangle mapping at assembly",
+        "sourceAspect": 5.830508474576271,
+        "rasterAspect": 9.404761904761905,
+        "reason": "按照原作生命槽区域定位；原始位图保留。"
+      },
+      "metrics": {
+        "rgbMae": 6.300418157738477,
+        "opaqueRgbMae": 6.741462944703229,
+        "alphaMae": 0.0012182052290302932,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 14.077980554977293,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "boon-athena-attack-v01",
+      "label": "雅典娜·神圣打击图标",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        565,
+        306,
+        184,
+        184
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/boon-athena-attack-v01.png",
+      "vector": "assets/ui/r02/vector/boon-athena-attack-v01.svg",
+      "rerender": "assets/ui/r02/rerender/boon-athena-attack-v01.png",
+      "prompt": "docs/ui/evidence/r02/boon-athena-attack-v01-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/boon-athena-attack-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "保留金色回纹菱形边框和弧形斩击主形；放大纹理为还原推定，后续在原作图标尺寸下复核。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-boon-athena-attack-v01.png",
+        "note": "已视觉检查 PNG 与 SVG 回渲染：轮廓、纹样、主要配色可用于下一轮拼接对齐。浏览器及 Godot 均能加载；放大纹理有轻微量化，最终原作相似度需页面复核。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        1254,
+        1254
+      ],
+      "contentBounds": [
+        36,
+        32,
+        1183,
+        1184
+      ],
+      "rasterSha256": "8e1c886ed3a140ff7359069bd6419dd7be305262a63069e86cd2512c6624dc38",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "metrics": {
+        "rgbMae": 5.816479716102298,
+        "opaqueRgbMae": 5.91282356669788,
+        "alphaMae": 0.0020443026358515338,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 11.114483771230113,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "boon-athena-cast-v01",
+      "label": "雅典娜·圣光弹图标",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        565,
+        539,
+        184,
+        185
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/boon-athena-cast-v01.png",
+      "vector": "assets/ui/r02/vector/boon-athena-cast-v01.svg",
+      "rerender": "assets/ui/r02/rerender/boon-athena-cast-v01.png",
+      "prompt": "docs/ui/evidence/r02/boon-athena-cast-v01-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/boon-athena-cast-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "保留黑色水平弹体、尾部折角与右侧彩光，未再以通用箭头代替。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-boon-athena-cast-v01.png",
+        "note": "已视觉检查 PNG 与 SVG 回渲染：轮廓、纹样、主要配色可用于下一轮拼接对齐。浏览器及 Godot 均能加载；放大纹理有轻微量化，最终原作相似度需页面复核。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        1254,
+        1254
+      ],
+      "contentBounds": [
+        86,
+        82,
+        1079,
+        1076
+      ],
+      "rasterSha256": "bae00d735e0e6891384239f8c48e49bada03cd9dbad208213363f6df6cd3939f",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "metrics": {
+        "rgbMae": 6.216608100324542,
+        "opaqueRgbMae": 6.332391661811801,
+        "alphaMae": 0.003379051568953929,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 12.94830270628088,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "boon-athena-dash-v01",
+      "label": "雅典娜·神圣冲刺图标",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        565,
+        774,
+        184,
+        187
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/boon-athena-dash-v01.png",
+      "vector": "assets/ui/r02/vector/boon-athena-dash-v01.svg",
+      "rerender": "assets/ui/r02/rerender/boon-athena-dash-v01.png",
+      "prompt": "docs/ui/evidence/r02/boon-athena-dash-v01-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/boon-athena-dash-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "保留奔跑腿形、左下爆发速度线和金色回纹框；彩光和局部笔触为截图还原，原始尺寸下继续复核。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-boon-athena-dash-v01.png",
+        "note": "已视觉检查 PNG 与 SVG 回渲染：轮廓、纹样、主要配色可用于下一轮拼接对齐。浏览器及 Godot 均能加载；放大纹理有轻微量化，最终原作相似度需页面复核。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        1254,
+        1254
+      ],
+      "contentBounds": [
+        14,
+        22,
+        1225,
+        1207
+      ],
+      "rasterSha256": "ce4cbc8086354fe47198d2ad3b4d0313af49b59eb70a643398c136cf9f8ebdce",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "metrics": {
+        "rgbMae": 5.3739075046448015,
+        "opaqueRgbMae": 5.4786406648264725,
+        "alphaMae": 0.0020498678324522165,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 10.655246034973565,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "choice-normal-v06",
+      "label": "祝福未选中底板",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        552,
+        519,
+        934,
+        221
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/choice-normal-v06.png",
+      "vector": "assets/ui/r02/vector/choice-normal-v06.svg",
+      "rerender": "assets/ui/r02/rerender/choice-normal-v06.png",
+      "prompt": "docs/ui/evidence/r02/choice-normal-v06-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/choice-normal-v06-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex 自主视觉复核",
+        "note": "边框已收暗收细，圆角与原图接近；位图原生比例仍有偏差，允许描摹后按源矩形做非等比坐标归一化。此批准仅为转换及首轮拼接，不是原作最终美术验收。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex 自主视觉复核",
+        "evidence": "docs/ui/evidence/r02/review-choice-normal-v06.png",
+        "note": "原图、还原PNG与SVG回渲染三栏复核完成；转换保留轮廓与主要纹样。选项比例使用源矩形缩放适配；页面仍需美术对齐。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        1254,
+        1254
+      ],
+      "contentBounds": [
+        55,
+        513,
+        1145,
+        251
+      ],
+      "rasterSha256": "64633e9203b497cd2589bf366f6b00503e6e8ad9436b8e525d7c5893b6b0d4a2",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "geometryNormalization": {
+        "method": "affine source-rectangle mapping at assembly; original PNG and trace unmodified",
+        "sourceAspect": 4.226244343891403,
+        "rasterAspect": 4.561752988047809,
+        "reason": "图像生成多轮未精准遵循主体比例；明确记录布局缩放，不以重新编写形状替代还原。"
+      },
+      "metrics": {
+        "rgbMae": 0.7818201480753119,
+        "opaqueRgbMae": 0.6505394263453746,
+        "alphaMae": 0.0001392994258145619,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 0.728434070601026,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "death-banner-v01",
+      "label": "死亡提示横幅",
+      "source": "docs/design/img/hades/original-death-mobygames.png",
+      "sourceRegion": [
+        18,
+        18,
+        1164,
+        154
+      ],
+      "sourceSize": [
+        1200,
+        675
+      ],
+      "raster": "assets/ui/r02/raster/death-banner-v01.png",
+      "vector": "assets/ui/r02/vector/death-banner-v01.svg",
+      "rerender": "assets/ui/r02/rerender/death-banner-v01.png",
+      "prompt": "docs/ui/evidence/r02/death-banner-v01-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/death-banner-v01-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "已按原作死亡静帧保留双侧骷髅、卷翼、盾状端饰和暗色横条；移除文字。不是旧版红色月桂构图。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-death-banner-v01.png",
+        "note": "原图拆件、还原 PNG 与 SVG 回渲染已并排检查。骷髅端饰、翼形卷纹、暗横条保留，可进入后续页面定位；静帧不能作为完整转场动画验收。"
+      },
+      "assembly": {
+        "status": "ready_for_alignment"
+      },
+      "rasterSize": [
+        2182,
+        721
+      ],
+      "contentBounds": [
+        51,
+        213,
+        2080,
+        327
+      ],
+      "rasterSha256": "8628d145c93ec4cd3b9d6231f3f6a30d65dc8ec1110d09f74dab9614330bcbd1",
+      "sourceSha256": "0b7ca687a04f56d34b2d2443e7b95ca7bc563b299a962689b830578a3c721795",
+      "metrics": {
+        "rgbMae": 4.846917165608807,
+        "opaqueRgbMae": 5.133773055977759,
+        "alphaMae": 0.006066607743601371,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 8.825734263145474,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "portrait-zagreus-v04",
+      "label": "扎格列欧斯·举手立绘",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        0,
+        254,
+        565,
+        898
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/portrait-zagreus-v04.png",
+      "vector": "assets/ui/r02/vector/portrait-zagreus-v04.svg",
+      "rerender": "assets/ui/r02/rerender/portrait-zagreus-v04.png",
+      "prompt": "docs/ui/evidence/r02/portrait-zagreus-v04-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/portrait-zagreus-v04-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex 自主视觉复核",
+        "note": "依据原作重新还原：右脸大面积暗部、单侧红眼、修长上身与源图下摆裁切；局部笔触仍非原始导出。新稿关键锚点将在整页复核。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex 自主三栏视觉复核",
+        "evidence": "docs/ui/evidence/r02/review-portrait-zagreus-v04.png",
+        "note": "在透明棋盘格上复核轮廓、暗面、细射线和SVG回渲染；转换保留位图细节。原作局部笔触与遮挡处仍有推定，进入整页对齐。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        912,
+        1725
+      ],
+      "contentBounds": [
+        47,
+        43,
+        827,
+        1682
+      ],
+      "rasterSha256": "e3f5c4813f42224e5bdc5ac4a660cd3be8c450a1a1517822d2ab4fdc4e46e133",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "traceParameters": {
+        "filter_speckle": 0,
+        "layer_difference": 1,
+        "mode": "polygon"
+      },
+      "metrics": {
+        "rgbMae": 2.168309145468594,
+        "opaqueRgbMae": 2.2119962717935273,
+        "alphaMae": 0.0007738519499032686,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 4.046049282150494,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "portrait-megaera-v03",
+      "label": "墨纪拉·对话立绘",
+      "source": "docs/design/img/hades/press-4K_Hades_MegaeraDialogue.jpg",
+      "sourceRegion": [
+        0,
+        338,
+        1350,
+        1822
+      ],
+      "sourceSize": [
+        3840,
+        2160
+      ],
+      "raster": "assets/ui/r02/raster/portrait-megaera-v03.png",
+      "vector": "assets/ui/r02/vector/portrait-megaera-v03-trace02.svg",
+      "rerender": "assets/ui/r02/rerender/portrait-megaera-v03-trace02.png",
+      "prompt": "docs/ui/evidence/r02/portrait-megaera-v03-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/portrait-megaera-v03-trace02-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex自主视觉评审",
+        "note": "已按实际透明棋盘格与像素 alpha 复核，轮廓外的彩色 RGB 大部分位于 alpha=0 隐藏区，不能按工具黑底预览判为残留背景。v03 保留清晰角色姿态，可进入描摹。表情与笔触为截图还原，仍需在页面复核。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex",
+        "evidence": "docs/ui/evidence/r02/review-portrait-megaera-v03-trace02.png",
+        "note": "第二次描摹提高细节保留，已视觉复核脸部、轮廓、衣褶与透明区域。此 SVG 为高精度母版（约12/22 MB），正式页面使用尺寸下还需做纹理与加载成本验收，不把低误差等同于原作完全一致。"
+      },
+      "assembly": {
+        "status": "ready_for_alignment"
+      },
+      "rasterSize": [
+        1024,
+        1536
+      ],
+      "contentBounds": [
+        6,
+        10,
+        1018,
+        1526
+      ],
+      "rasterSha256": "dc147acfb1ff7d21aa2683745927d175071e8f2a3c6a1363bec7d26c72fa5270",
+      "sourceSha256": "329b080e225c48481216985514c7953688b443b4dfed4b4caf9958b75ebd333b",
+      "editInput": "assets/ui/r02/raster/portrait-megaera-v02.png",
+      "metrics": {
+        "rgbMae": 3.635790413230423,
+        "opaqueRgbMae": 3.7429066779626483,
+        "alphaMae": 0.000802485923059433,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 8.157157951520935,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      },
+      "previousConversions": [
+        {
+          "vector": "assets/ui/r02/vector/portrait-megaera-v03.svg",
+          "report": "docs/ui/evidence/r02/portrait-megaera-v03-conversion.json",
+          "note": "初次描摹脸部细线与明暗有过度简化，保留作比较。"
+        }
+      ],
+      "traceParameters": {
+        "filter_speckle": 0,
+        "layer_difference": 1,
+        "mode": "polygon"
+      }
+    },
+    {
+      "id": "icon-athena-v03",
+      "label": "雅典娜赐福徽章",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        99,
+        82,
+        185,
+        173
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/icon-athena-v03.png",
+      "vector": "assets/ui/r02/vector/icon-athena-v03.svg",
+      "rerender": "assets/ui/r02/rerender/icon-athena-v03.png",
+      "prompt": "docs/ui/evidence/r02/icon-athena-v03-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/icon-athena-v03-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex 自主视觉复核",
+        "note": "明暗改为平面分块，盾面圆环与四颗铆钉保留；实际透明背景下检查。外围放射线尚未还原，单独列为页面差距。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex 自主视觉复核",
+        "evidence": "docs/ui/evidence/r02/review-icon-athena-v03.png",
+        "note": "原图、还原PNG与SVG回渲染三栏复核完成；转换保留轮廓与主要纹样。选项比例使用源矩形缩放适配；页面仍需美术对齐。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        1296,
+        1214
+      ],
+      "contentBounds": [
+        137,
+        103,
+        1024,
+        1012
+      ],
+      "rasterSha256": "4f9e80d080b84b0f734f2a9bfc81da13f8f6ba2360caffff602464c81218c55e",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "metrics": {
+        "rgbMae": 3.239693773495425,
+        "opaqueRgbMae": 3.605186075283705,
+        "alphaMae": 0.0018577700850876205,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 5.411384476350631,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "choice-focus-v03",
+      "label": "祝福选中底板",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        550,
+        281,
+        939,
+        228
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/choice-focus-v03.png",
+      "vector": "assets/ui/r02/vector/choice-focus-v03.svg",
+      "rerender": "assets/ui/r02/rerender/choice-focus-v03.png",
+      "prompt": "docs/ui/evidence/r02/choice-focus-v03-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/choice-focus-v03-conversion.json",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex 自主视觉复核",
+        "note": "彩色描边变细，内框不再粗亮；位图原生比例仍有偏差，SVG 与 PNG 在源矩形中使用相同坐标归一化，再核对边框粗细。保留这一适配限制。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex 自主视觉复核",
+        "evidence": "docs/ui/evidence/r02/review-choice-focus-v03.png",
+        "note": "原图、还原PNG与SVG回渲染三栏复核完成；转换保留轮廓与主要纹样。选项比例使用源矩形缩放适配；页面仍需美术对齐。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "rasterSize": [
+        1254,
+        1254
+      ],
+      "contentBounds": [
+        37,
+        499,
+        1180,
+        255
+      ],
+      "rasterSha256": "bc43244f5e6ab6fa6403aa40820e30985a72efe95e71814f005c6df955132a7c",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "geometryNormalization": {
+        "method": "affine source-rectangle mapping at assembly; original PNG and trace unmodified",
+        "sourceAspect": 4.118421052631579,
+        "rasterAspect": 4.627450980392157,
+        "reason": "图像生成多轮未精准遵循主体比例；明确记录布局缩放，不以重新编写形状替代还原。"
+      },
+      "metrics": {
+        "rgbMae": 3.160704644132056,
+        "opaqueRgbMae": 2.8458679309115595,
+        "alphaMae": 0.0018234853228899321,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 5.448067981609404,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    },
+    {
+      "id": "athena-rays-v03",
+      "label": "雅典娜徽章放射光线",
+      "source": "docs/design/img/hades/original-boon-menu.jpg",
+      "sourceRegion": [
+        0,
+        0,
+        600,
+        370
+      ],
+      "sourceSize": [
+        2048,
+        1152
+      ],
+      "raster": "assets/ui/r02/raster/athena-rays-v03.png",
+      "vector": "assets/ui/r02/vector/athena-rays-v03.svg",
+      "rerender": "assets/ui/r02/rerender/athena-rays-v03.png",
+      "prompt": "docs/ui/evidence/r02/athena-rays-v03-prompt.txt",
+      "conversionReport": "docs/ui/evidence/r02/athena-rays-v03-conversion.json",
+      "rasterSize": [
+        1599,
+        984
+      ],
+      "contentBounds": [
+        0,
+        184,
+        1588,
+        717
+      ],
+      "rasterSha256": "c0da023b27d14206cdc9bfbf8235e0dfacf898e7b1e0abaa07ec2d411525736e",
+      "sourceSha256": "1c346ef9ecf46a6e1d48176589cf0a98478ecffe2cdad4ef77805052d18beb14",
+      "rasterReview": {
+        "status": "approved_for_trace",
+        "reviewer": "Codex 自主复核",
+        "note": "减弱蓝扇光并去掉伸入右侧标题的蓝光；非对称长射线方向保留。横线蓝边比原图偏淡，记录为局部差距。使用整幅layoutBounds，避免以alpha>=128包围盒裁掉半透明蓝光。"
+      },
+      "svgReview": {
+        "status": "approved",
+        "reviewer": "Codex 自主三栏复核",
+        "evidence": "docs/ui/evidence/r02/review-athena-rays-v03.png",
+        "note": "弱蓝扇透明度和长射线在回渲染中保持；使用整幅画布而非不透明轮廓裁切，避免弱光丢失。源图蓝边和射线数量仍有细微差距，非逐像素一致。"
+      },
+      "assembly": {
+        "status": "refinement_01",
+        "page": "docs/ui/boon-r02.html",
+        "nativeScene": "scenes/ui_boon_r02.tscn",
+        "review": "docs/ui/evidence/r02/refine-01/review.json"
+      },
+      "traceParameters": {
+        "filter_speckle": 0,
+        "layer_difference": 2,
+        "mode": "polygon"
+      },
+      "layoutBounds": [
+        0,
+        0,
+        1599,
+        984
+      ],
+      "editInput": "assets/ui/r02/raster/athena-rays-v02.png",
+      "metrics": {
+        "rgbMae": 3.448948709696778,
+        "opaqueRgbMae": 8.484246548401055,
+        "alphaMae": 0.011501340145213857,
+        "silhouetteIou": 1,
+        "pixelsOver16RgbErrorPercent": 6.87647594240102,
+        "comparedAgainst": "restored PNG; not original screenshot",
+        "visualReviewRequired": true
+      }
+    }
+  ],
+  "pendingGroups": [
+    {
+      "group": "本页继续精修",
+      "items": [
+        "放射光线方向与锚点",
+        "字体和人物面部笔触",
+        "生命槽后续页面尺寸复核"
+      ]
+    },
+    {
+      "group": "HUD 后续拆件",
+      "items": [
+        "生命填充",
+        "Boss 血条",
+        "能力槽",
+        "血石/资源/复活图标"
+      ]
+    },
+    {
+      "group": "对话后续拆件",
+      "items": [
+        "继续箭头"
+      ]
+    },
+    {
+      "group": "奖励与死亡",
+      "items": [
+        "奖励交互原作接近/领取序列",
+        "奖励提示条",
+        "死亡完整转场和结算范围核对"
+      ]
+    }
+  ],
+  "rejectedVersions": [
+    "boon-choice-normal-v01",
+    "choice-normal-v02",
+    "choice-normal-v03",
+    "portrait-zagreus-v02",
+    "portrait-megaera-v02",
+    "choice-normal-v04",
+    "icon-athena-v02",
+    "choice-focus-v01",
+    "choice-normal-v05",
+    "choice-focus-v02",
+    "health-track-v02",
+    "health-track-v03",
+    "health-track-v01",
+    "athena-rays-v01"
+  ],
+  "refinementReview": "docs/ui/evidence/r02/refine-01/review.json"
+}

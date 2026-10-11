@@ -1,0 +1,509 @@
+{
+  "version": 3,
+  "sample_rate": 48000,
+  "cues": {
+    "slash_1": {
+      "files": [
+        "res://assets/audio/slash_1.wav",
+        "res://assets/audio/variants/slash_1_02.wav",
+        "res://assets/audio/variants/slash_1_03.wav",
+        "res://assets/audio/variants/slash_1_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -7,
+      "priority": 50,
+      "cooldown_ms": 65,
+      "max_voices": 3,
+      "pitch_jitter": 0.035,
+      "sources": [
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "swishes/swishes/swish-1.wav",
+        "swishes/swishes/swish-2.wav",
+        "swishes/swishes/swish-3.wav",
+        "swishes/swishes/swish-4.wav",
+        "swords/sword - StarNinjas/sword.1.ogg",
+        "swords/sword - StarNinjas/sword.4.ogg",
+        "swords/sword - StarNinjas/sword.7.ogg",
+        "swords/sword - StarNinjas/sword.9.ogg"
+      ]
+    },
+    "slash_2": {
+      "files": [
+        "res://assets/audio/slash_2.wav",
+        "res://assets/audio/variants/slash_2_02.wav",
+        "res://assets/audio/variants/slash_2_03.wav",
+        "res://assets/audio/variants/slash_2_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -6,
+      "priority": 50,
+      "cooldown_ms": 65,
+      "max_voices": 3,
+      "pitch_jitter": 0.035,
+      "sources": [
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "swishes/swishes/swish-5.wav",
+        "swishes/swishes/swish-6.wav",
+        "swishes/swishes/swish-8.wav",
+        "swishes/swishes/swish-9.wav",
+        "swords/sword - StarNinjas/sword.1.ogg",
+        "swords/sword - StarNinjas/sword.4.ogg",
+        "swords/sword - StarNinjas/sword.7.ogg",
+        "swords/sword - StarNinjas/sword.9.ogg"
+      ]
+    },
+    "thrust": {
+      "files": [
+        "res://assets/audio/thrust.wav",
+        "res://assets/audio/variants/thrust_02.wav",
+        "res://assets/audio/variants/thrust_03.wav",
+        "res://assets/audio/variants/thrust_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -5,
+      "priority": 55,
+      "cooldown_ms": 65,
+      "max_voices": 3,
+      "pitch_jitter": 0.025,
+      "sources": [
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "swishes/swishes/swish-10.wav",
+        "swishes/swishes/swish-11.wav",
+        "swishes/swishes/swish-12.wav",
+        "swishes/swishes/swish-13.wav",
+        "swords/sword - StarNinjas/sword.1.ogg",
+        "swords/sword - StarNinjas/sword.4.ogg",
+        "swords/sword - StarNinjas/sword.7.ogg",
+        "swords/sword - StarNinjas/sword.9.ogg"
+      ]
+    },
+    "dash": {
+      "files": [
+        "res://assets/audio/dash.wav",
+        "res://assets/audio/variants/dash_02.wav",
+        "res://assets/audio/variants/dash_03.wav",
+        "res://assets/audio/variants/dash_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -10,
+      "priority": 50,
+      "cooldown_ms": 80,
+      "max_voices": 2,
+      "pitch_jitter": 0.04,
+      "sources": [
+        "swishes/swishes/swish-11.wav",
+        "swishes/swishes/swish-13.wav",
+        "swishes/swishes/swish-6.wav",
+        "swishes/swishes/swish-9.wav"
+      ]
+    },
+    "nova": {
+      "files": [
+        "res://assets/audio/nova.wav",
+        "res://assets/audio/variants/nova_02.wav",
+        "res://assets/audio/variants/nova_03.wav",
+        "res://assets/audio/variants/nova_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -4,
+      "priority": 80,
+      "cooldown_ms": 130,
+      "max_voices": 2,
+      "pitch_jitter": 0.02,
+      "sources": [
+        "kenney-impact/Audio/impactGlass_heavy_000.ogg",
+        "kenney-impact/Audio/impactGlass_heavy_001.ogg",
+        "kenney-impact/Audio/impactGlass_heavy_002.ogg",
+        "kenney-impact/Audio/impactGlass_heavy_003.ogg",
+        "kenney-impact/Audio/impactMining_000.ogg",
+        "kenney-impact/Audio/impactMining_001.ogg",
+        "kenney-impact/Audio/impactMining_002.ogg",
+        "kenney-impact/Audio/impactMining_003.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_000.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_001.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_002.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_003.ogg",
+        "swishes/swishes/swish-13.wav",
+        "swishes/swishes/swish-5.wav",
+        "swishes/swishes/swish-7.wav",
+        "swishes/swishes/swish-9.wav"
+      ]
+    },
+    "impact": {
+      "files": [
+        "res://assets/audio/impact.wav",
+        "res://assets/audio/variants/impact_02.wav",
+        "res://assets/audio/variants/impact_03.wav",
+        "res://assets/audio/variants/impact_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -5,
+      "priority": 60,
+      "cooldown_ms": 38,
+      "max_voices": 3,
+      "pitch_jitter": 0.055,
+      "sources": [
+        "kenney-impact/Audio/impactPunch_medium_000.ogg",
+        "kenney-impact/Audio/impactPunch_medium_001.ogg",
+        "kenney-impact/Audio/impactPunch_medium_002.ogg",
+        "kenney-impact/Audio/impactPunch_medium_003.ogg",
+        "kenney-rpg/Audio/chop.ogg",
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "swords/sword - StarNinjas/sword.10.ogg",
+        "swords/sword - StarNinjas/sword.3.ogg",
+        "swords/sword - StarNinjas/sword.5.ogg",
+        "swords/sword - StarNinjas/sword.8.ogg"
+      ]
+    },
+    "heavy": {
+      "files": [
+        "res://assets/audio/heavy.wav",
+        "res://assets/audio/variants/heavy_02.wav",
+        "res://assets/audio/variants/heavy_03.wav",
+        "res://assets/audio/variants/heavy_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -4,
+      "priority": 70,
+      "cooldown_ms": 55,
+      "max_voices": 3,
+      "pitch_jitter": 0.045,
+      "sources": [
+        "kenney-impact/Audio/impactPunch_heavy_000.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_001.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_002.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_003.ogg",
+        "kenney-rpg/Audio/chop.ogg",
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "swords/sword - StarNinjas/sword.10.ogg",
+        "swords/sword - StarNinjas/sword.3.ogg",
+        "swords/sword - StarNinjas/sword.5.ogg",
+        "swords/sword - StarNinjas/sword.8.ogg"
+      ]
+    },
+    "armor": {
+      "files": [
+        "res://assets/audio/armor.wav",
+        "res://assets/audio/variants/armor_02.wav",
+        "res://assets/audio/variants/armor_03.wav",
+        "res://assets/audio/variants/armor_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -8,
+      "priority": 65,
+      "cooldown_ms": 45,
+      "max_voices": 3,
+      "pitch_jitter": 0.035,
+      "sources": [
+        "kenney-impact/Audio/impactPunch_medium_000.ogg",
+        "kenney-impact/Audio/impactPunch_medium_001.ogg",
+        "kenney-impact/Audio/impactPunch_medium_002.ogg",
+        "kenney-impact/Audio/impactPunch_medium_003.ogg",
+        "swords/sword_clash.1.ogg",
+        "swords/sword_clash.3.ogg",
+        "swords/sword_clash.5.ogg",
+        "swords/sword_clash.8.ogg"
+      ]
+    },
+    "break": {
+      "files": [
+        "res://assets/audio/break.wav",
+        "res://assets/audio/variants/break_02.wav",
+        "res://assets/audio/variants/break_03.wav",
+        "res://assets/audio/variants/break_04.wav"
+      ],
+      "bus": "Cues",
+      "gain_db": -4,
+      "priority": 85,
+      "cooldown_ms": 80,
+      "max_voices": 2,
+      "pitch_jitter": 0.025,
+      "sources": [
+        "kenney-impact/Audio/impactGlass_heavy_000.ogg",
+        "kenney-impact/Audio/impactGlass_heavy_001.ogg",
+        "kenney-impact/Audio/impactGlass_heavy_002.ogg",
+        "kenney-impact/Audio/impactGlass_heavy_003.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_000.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_001.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_002.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_003.ogg",
+        "swords/sword_clash.10.ogg",
+        "swords/sword_clash.2.ogg",
+        "swords/sword_clash.3.ogg",
+        "swords/sword_clash.4.ogg",
+        "swords/sword_clash.6.ogg",
+        "swords/sword_clash.7.ogg",
+        "swords/sword_clash.8.ogg",
+        "swords/sword_clash.9.ogg"
+      ]
+    },
+    "hurt": {
+      "files": [
+        "res://assets/audio/hurt.wav",
+        "res://assets/audio/variants/hurt_02.wav",
+        "res://assets/audio/variants/hurt_03.wav",
+        "res://assets/audio/variants/hurt_04.wav"
+      ],
+      "bus": "Cues",
+      "gain_db": -4,
+      "priority": 95,
+      "cooldown_ms": 150,
+      "max_voices": 2,
+      "pitch_jitter": 0.02,
+      "sources": [
+        "kenney-impact/Audio/impactPunch_heavy_000.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_001.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_002.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_003.ogg",
+        "kenney-rpg/Audio/chop.ogg",
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "swords/sword - StarNinjas/sword.10.ogg",
+        "swords/sword - StarNinjas/sword.3.ogg",
+        "swords/sword - StarNinjas/sword.5.ogg",
+        "swords/sword - StarNinjas/sword.8.ogg"
+      ]
+    },
+    "death": {
+      "files": [
+        "res://assets/audio/death.wav",
+        "res://assets/audio/variants/death_02.wav",
+        "res://assets/audio/variants/death_03.wav",
+        "res://assets/audio/variants/death_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -10,
+      "priority": 65,
+      "cooldown_ms": 55,
+      "max_voices": 3,
+      "pitch_jitter": 0.05,
+      "sources": [
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "swishes/swishes/swish-10.wav",
+        "swishes/swishes/swish-12.wav",
+        "swishes/swishes/swish-4.wav",
+        "swishes/swishes/swish-8.wav"
+      ]
+    },
+    "step": {
+      "files": [
+        "res://assets/audio/step.wav",
+        "res://assets/audio/variants/step_02.wav",
+        "res://assets/audio/variants/step_03.wav",
+        "res://assets/audio/variants/step_04.wav"
+      ],
+      "bus": "Foley",
+      "gain_db": -18,
+      "priority": 10,
+      "cooldown_ms": 110,
+      "max_voices": 2,
+      "pitch_jitter": 0.065,
+      "sources": [
+        "kenney-impact/Audio/footstep_concrete_000.ogg",
+        "kenney-impact/Audio/footstep_concrete_001.ogg",
+        "kenney-impact/Audio/footstep_concrete_002.ogg",
+        "kenney-impact/Audio/footstep_concrete_003.ogg"
+      ]
+    },
+    "charge": {
+      "files": [
+        "res://assets/audio/charge.wav",
+        "res://assets/audio/variants/charge_02.wav",
+        "res://assets/audio/variants/charge_03.wav",
+        "res://assets/audio/variants/charge_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -16,
+      "priority": 40,
+      "cooldown_ms": 100,
+      "max_voices": 1,
+      "pitch_jitter": 0.02,
+      "sources": [
+        "swishes/swishes/swish-1.wav",
+        "swishes/swishes/swish-11.wav",
+        "swishes/swishes/swish-3.wav",
+        "swishes/swishes/swish-8.wav"
+      ]
+    },
+    "enemy_windup": {
+      "files": [
+        "res://assets/audio/enemy_windup.wav",
+        "res://assets/audio/variants/enemy_windup_02.wav",
+        "res://assets/audio/variants/enemy_windup_03.wav",
+        "res://assets/audio/variants/enemy_windup_04.wav"
+      ],
+      "bus": "Cues",
+      "gain_db": -12,
+      "priority": 75,
+      "cooldown_ms": 120,
+      "max_voices": 2,
+      "pitch_jitter": 0.025,
+      "sources": [
+        "kenney-rpg/Audio/drawKnife1.ogg",
+        "kenney-rpg/Audio/drawKnife2.ogg",
+        "kenney-rpg/Audio/drawKnife3.ogg",
+        "swishes/swishes/swish-1.wav",
+        "swishes/swishes/swish-2.wav",
+        "swishes/swishes/swish-3.wav",
+        "swishes/swishes/swish-4.wav"
+      ]
+    },
+    "enemy_swing": {
+      "files": [
+        "res://assets/audio/enemy_swing.wav",
+        "res://assets/audio/variants/enemy_swing_02.wav",
+        "res://assets/audio/variants/enemy_swing_03.wav",
+        "res://assets/audio/variants/enemy_swing_04.wav"
+      ],
+      "bus": "Combat",
+      "gain_db": -10,
+      "priority": 45,
+      "cooldown_ms": 70,
+      "max_voices": 3,
+      "pitch_jitter": 0.04,
+      "sources": [
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "swishes/swishes/swish-5.wav",
+        "swishes/swishes/swish-7.wav",
+        "swishes/swishes/swish-8.wav",
+        "swishes/swishes/swish-9.wav"
+      ]
+    },
+    "backstab": {
+      "files": [
+        "res://assets/audio/backstab.wav",
+        "res://assets/audio/variants/backstab_02.wav",
+        "res://assets/audio/variants/backstab_03.wav",
+        "res://assets/audio/variants/backstab_04.wav"
+      ],
+      "bus": "Cues",
+      "gain_db": -13,
+      "priority": 75,
+      "cooldown_ms": 80,
+      "max_voices": 2,
+      "pitch_jitter": 0.02,
+      "sources": [
+        "kenney-rpg/Audio/chop.ogg",
+        "swords/sword - StarNinjas/sword.2.ogg",
+        "swords/sword - StarNinjas/sword.4.ogg",
+        "swords/sword - StarNinjas/sword.6.ogg",
+        "swords/sword - StarNinjas/sword.8.ogg"
+      ]
+    },
+    "player_death": {
+      "files": [
+        "res://assets/audio/player_death.wav",
+        "res://assets/audio/variants/player_death_02.wav",
+        "res://assets/audio/variants/player_death_03.wav",
+        "res://assets/audio/variants/player_death_04.wav"
+      ],
+      "bus": "Cues",
+      "gain_db": -4,
+      "priority": 100,
+      "cooldown_ms": 500,
+      "max_voices": 1,
+      "pitch_jitter": 0.01,
+      "sources": [
+        "kenney-impact/Audio/impactPunch_heavy_000.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_001.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_002.ogg",
+        "kenney-impact/Audio/impactPunch_heavy_003.ogg",
+        "kenney-rpg/Audio/chop.ogg",
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "swords/sword - StarNinjas/sword.10.ogg",
+        "swords/sword - StarNinjas/sword.3.ogg",
+        "swords/sword - StarNinjas/sword.5.ogg",
+        "swords/sword - StarNinjas/sword.8.ogg"
+      ]
+    },
+    "ui_confirm": {
+      "files": [
+        "res://assets/audio/ui_confirm.wav",
+        "res://assets/audio/variants/ui_confirm_02.wav",
+        "res://assets/audio/variants/ui_confirm_03.wav",
+        "res://assets/audio/variants/ui_confirm_04.wav"
+      ],
+      "bus": "UI",
+      "gain_db": -15,
+      "priority": 90,
+      "cooldown_ms": 90,
+      "max_voices": 1,
+      "pitch_jitter": 0.01,
+      "sources": [
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "kenney-rpg/Audio/metalClick.ogg"
+      ]
+    },
+    "ui_pause": {
+      "files": [
+        "res://assets/audio/ui_pause.wav",
+        "res://assets/audio/variants/ui_pause_02.wav",
+        "res://assets/audio/variants/ui_pause_03.wav",
+        "res://assets/audio/variants/ui_pause_04.wav"
+      ],
+      "bus": "UI",
+      "gain_db": -18,
+      "priority": 90,
+      "cooldown_ms": 80,
+      "max_voices": 1,
+      "pitch_jitter": 0.01,
+      "sources": [
+        "kenney-rpg/Audio/cloth1.ogg",
+        "kenney-rpg/Audio/cloth2.ogg",
+        "kenney-rpg/Audio/cloth3.ogg",
+        "kenney-rpg/Audio/cloth4.ogg",
+        "kenney-rpg/Audio/metalClick.ogg"
+      ]
+    },
+    "encounter_clear": {
+      "files": [
+        "res://assets/audio/encounter_clear.wav",
+        "res://assets/audio/variants/encounter_clear_02.wav",
+        "res://assets/audio/variants/encounter_clear_03.wav",
+        "res://assets/audio/variants/encounter_clear_04.wav"
+      ],
+      "bus": "Cues",
+      "gain_db": -9,
+      "priority": 90,
+      "cooldown_ms": 1000,
+      "max_voices": 1,
+      "pitch_jitter": 0.01,
+      "sources": [
+        "kenney-rpg/Audio/handleCoins.ogg",
+        "swishes/swishes/swish-5.wav",
+        "swishes/swishes/swish-7.wav",
+        "swishes/swishes/swish-8.wav",
+        "swishes/swishes/swish-9.wav"
+      ]
+    }
+  }
+}

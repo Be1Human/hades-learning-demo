@@ -1,0 +1,73 @@
+{
+  "id": "tartarus-reference-03",
+  "revision": 5,
+  "reference": "docs/scene/reference/original-steam-03.jpg",
+  "bounds": [
+    -10,
+    -5,
+    11,
+    8
+  ],
+  "pits": [
+    {
+      "id": "near-pit",
+      "rect": [
+        -6,
+        0,
+        0,
+        5
+      ],
+      "depth": 1.7
+    },
+    {
+      "id": "far-pit",
+      "rect": [
+        2,
+        0,
+        7,
+        4
+      ],
+      "depth": 1.7
+    }
+  ],
+  "mosaics": [
+    [
+      -4,
+      -2.5
+    ],
+    [
+      -0.2,
+      6.5
+    ],
+    [
+      9,
+      3
+    ]
+  ],
+  "altar": [
+    1,
+    2
+  ],
+  "columns": [
+    -10,
+    0,
+    7,
+    12
+  ],
+  "camera": {
+    "azimuth": -0.785398,
+    "elevation": 0.52,
+    "size": 10.4,
+    "target": [
+      -1.09,
+      0,
+      -0.816
+    ]
+  },
+  "notes": "Visible geometry reconstruction from one screenshot; hidden room extent inferred. UI, enemies and combat splashes are excluded from the environment target.",
+  "mosaic_sizes": [
+    2.8,
+    2.6,
+    2.8
+  ]
+}

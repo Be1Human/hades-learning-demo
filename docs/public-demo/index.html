@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A playable three-room Godot combat prototype: menus, combat, boons, a boss encounter, and complete victory and defeat flows.">
+<title>Blade Trial — Playable Demo</title>
+<style>
+:root{color-scheme:dark;--bg:#091114;--panel:#152327;--line:#32474b;--text:#e1e8e0;--muted:#b2c2bd;--gold:#e1c995;--green:#9dd7b5}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.7 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:48px 28px 70px}a{color:var(--green);text-underline-offset:4px}h1,h2,h3{line-height:1.18;color:var(--gold)}h1{font-size:clamp(36px,6vw,66px);max-width:850px;margin:18px 0}h2{font-size:30px;margin:48px 0 22px}.eyebrow{font-size:12px;letter-spacing:.16em;color:var(--green)}.intro{max-width:850px;font-size:20px;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0 30px}.tags span{padding:6px 14px;border:1px solid var(--line);border-radius:30px;font-size:14px;color:var(--green)}figure{margin:0;background:var(--panel);border:1px solid var(--line);min-width:0}img,video{display:block;width:100%;height:auto;background:#000}figcaption{padding:17px 20px}figcaption b{color:var(--gold)}figcaption p{font-size:15px;color:var(--muted);margin:5px 0}.videos{display:grid;gap:24px}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.note{padding:21px 25px;background:var(--panel);border-left:3px solid var(--gold);color:var(--muted);margin:28px 0}.note p{margin:8px 0}.flow{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}.flow li{border:1px solid var(--line);padding:10px 15px;background:var(--panel)}.keys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.keys div{padding:17px;background:var(--panel);border:1px solid var(--line)}.keys b{display:block;color:var(--gold)}.keys span{font-size:15px;color:var(--muted)}li{margin:8px 0}footer{margin-top:48px;border-top:1px solid var(--line);padding-top:22px;color:var(--muted);font-size:14px}footer a{margin-right:18px}@media(max-width:700px){main{padding:28px 18px 45px}.gallery,.keys{grid-template-columns:1fr}.intro{font-size:18px}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">GODOT COMBAT PROTOTYPE · PUBLIC DEMONSTRATION</div>
+<h1>From the main menu to the final encounter.</h1>
+<p class="intro">Blade Trial is a Hades-inspired, three-room combat demo. A complete run connects the entrance, dialogue, two combat waves, a boon choice, and a boss encounter with working victory, defeat, retry, and menu flows.</p>
+<div class="tags"><span>Three connected rooms</span><span>Real combat and enemy AI</span><span>Chinese in-game UI</span><span>Native runtime recordings</span></div>
+<ol class="flow" aria-label="Run sequence"><li>Main menu</li><li>Entrance &amp; dialogue</li><li>Combat waves</li><li>Reward &amp; boon</li><li>Boss encounter</li><li>Results &amp; retry</li></ol>
+
+<h2>Complete recorded runs</h2>
+<div class="videos">
+<figure><video controls playsinline preload="none" poster="media/cover.png" aria-label="Complete victory playthrough"><source src="media/victory-playthrough.mp4" type="video/mp4"></video><figcaption><b>Victory: a complete run and return to the menu</b><p>47.93 seconds · 1440 × 900 · 30 fps · No audio track. Nine enemies defeated, including the boss. One normal death-defiance charge was consumed.</p><a href="media/victory-playthrough.mp4">Open victory video</a></figcaption></figure>
+<figure><video controls playsinline preload="none" poster="media/tartarus-combat.png" aria-label="Death, results, and restart playthrough"><source src="media/defeat-playthrough.mp4" type="video/mp4"></video><figcaption><b>Defeat: death defiance, death, results, and a fresh run</b><p>43.50 seconds · 1440 × 900 · 30 fps · No audio track. The automated player approaches enemies and stops attacking; actual enemy damage triggers both deaths.</p><a href="media/defeat-playthrough.mp4">Open defeat video</a></figcaption></figure>
+</div>
+
+<div class="note"><b>How these recordings were made</b><p>Godot 4.7.2 loads the final Windows release PCK and renders native game frames. Automated keyboard and mouse InputEvent events navigate menus, move, aim, attack, cast, dodge, and select a boon while normal physics and enemy AI run.</p><p>The replay does not edit health, resources, or spawns; teleport actors; inject victory or defeat; or call character action methods directly. It captures only the game viewport. These are automated playthroughs, not recordings of a human player.</p><p>The release executable was separately checked through its default startup path. The replay harness runs with the Godot engine and the release PCK because the release template does not execute the external test script.</p></div>
+
+<h2>Inside the demo</h2>
+<div class="gallery">
+<figure><a href="media/cover.png"><img src="media/cover.png" width="1440" height="900" alt="Game main menu with start, settings, controls, and quit options" loading="lazy"></a><figcaption><b>Main menu</b><p>Start a fresh trial, adjust settings, or read the controls.</p></figcaption></figure>
+<figure><a href="media/entrance.png"><img src="media/entrance.png" width="1440" height="900" alt="Isometric entrance hall with a lit portal and a player character" loading="lazy"></a><figcaption><b>Entrance hall</b><p>Choose an elemental family and approach the portal to begin.</p></figcaption></figure>
+<figure><a href="media/tartarus-combat.png"><img src="media/tartarus-combat.png" width="1440" height="900" alt="Combat room with two flame pits, a melee enemy, a witch, and a skull" loading="lazy"></a><figcaption><b>Mixed-enemy combat</b><p>Two waves combine melee pressure, ranged attacks, and charging enemies.</p></figcaption></figure>
+<figure><a href="media/boon-selection.png"><img src="media/boon-selection.png" width="1440" height="900" alt="Three Chinese-language boon choices with their actual gameplay bonuses" loading="lazy"></a><figcaption><b>Real boon effects</b><p>Choose increased weapon damage, more maximum health, or faster dash recovery.</p></figcaption></figure>
+<figure><a href="media/boss-fight.png"><img src="media/boss-fight.png" width="1440" height="900" alt="Boss battle in the column hall with a visible circular attack effect" loading="lazy"></a><figcaption><b>The final encounter</b><p>The overseer uses a sweep, rush, projectile barrage, and repeated ground attacks.</p></figcaption></figure>
+<figure><a href="media/victory.png"><img src="media/victory.png" width="1440" height="900" alt="Victory results showing nine defeats and buttons to retry or return to the main menu" loading="lazy"></a><figcaption><b>Results and another run</b><p>Both endings support retry and return-to-menu actions.</p></figcaption></figure>
+</div>
+
+<h2>Controls</h2>
+<div class="keys"><div><b>WASD + mouse</b><span>Move and aim</span></div><div><b>Left click / Space</b><span>Combo attacks / dash</span></div><div><b>Right click or Q / F</b><span>Nova / bloodstone cast</span></div><div><b>1 / 2 / 3 in the entrance</b><span>Lightning / protection / tide</span></div><div><b>E / Esc</b><span>Interact / pause</span></div><div><b>Arrows / Tab / Enter</b><span>Navigate menus and confirm</span></div></div>
+
+<h2>Current limits</h2>
+<ul><li>This is a playable integration demo. Original-game visual fidelity is still unfinished, including character materials, weapon alignment, and environment detail.</li><li>Victory results immediately freeze the background scene. The final enemy's death animation can therefore remain in a transitional pose.</li><li>These recordings are silent. They do not demonstrate audio quality.</li></ul>
+<footer><p>This public page contains selected game-viewport media and relative links only. Runtime logs, raw execution manifests, local settings, and development conversations are excluded.</p><a href="README.md">Capture notes</a><a href="privacy-check.json">Public media checks</a></footer>
+</main></body></html>
+
