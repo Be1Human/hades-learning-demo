@@ -50,6 +50,26 @@ The demo includes sword combos, dash attacks, a nova attack, recoverable bloodst
 
 ## Evidence and scope
 
+### v0.1.1: charging skull refinement
+
+![Rebuilt charging skull: native Godot inspection view](docs/characters/skull-r01/media/after-studio-three-quarter.png)
+
+The charging enemy now has carved eye sockets and a nasal cavity, cheek arches,
+24 shaped teeth, an articulated jaw, painted bone tones and ember eyes. Its hover,
+windup, recoil and fall follow the existing combat state without changing damage
+or collision rules. This is a native inspection view with fixed lighting, not a
+gameplay-camera screenshot or a claim of original-game fidelity.
+
+See the [bilingual comparison page](docs/characters/skull-r01/index.html) for four
+matched before/after views, an overlay slider and a short controlled charge
+recording. Download the page with its media to use its interactive controls.
+The older gameplay gallery above remains v0.1.0 evidence.
+
+For v0.1.1, both source and exported PCK passed the focused skull checks (55),
+frontend checks (13) and combat checks (11): **158 passed, 0 failed** in total.
+The native clip separately confirms a 12-point collision hit. The release EXE
+also passed a bounded native startup check; these are not a new full-run replay.
+
 The public source snapshot contains the runtime implementation, necessary resources, bilingual documentation, and selected demo media. Internal development histories, reference captures, private review records, caches, and raw capture frames are excluded.
 
 For **v0.1.0**, the public snapshot completed a clean import and Windows export with Godot 4.7.2 on the current Windows host. `public_smoke.gd` passed **13/13** checks and `combat_smoke.gd` passed **11/11**, both at fixed 60 fps. This verifies a clean source build on the same host; a separate new-machine build has not been verified. See [Building](docs/english/BUILDING.md) to repeat the checks.

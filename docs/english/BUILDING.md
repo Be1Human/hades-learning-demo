@@ -96,4 +96,20 @@ Controlled branch tests and natural gameplay replays answer different questions.
 
 Blender and generation-service tooling are needed only to rebuild authored assets, not to use the included runtime GLBs. FFmpeg/FFprobe can encode and inspect new replay media; they are not runtime dependencies.
 
+The v0.1.1 skull can be regenerated with Blender 4.5.3 LTS:
+
+```powershell
+blender --background --factory-startup --python tools/author_skull_r01.py
+```
+
+This writes the runtime GLB and provenance manifest under `assets/characters/skull-r01/`, plus an editable `.blend` under `authoring/skull-r01/`. Re-import the GLB in Godot after authoring. The runtime needs only the included GLB, not Blender.
+
+Run the focused skull regression after import:
+
+```powershell
+& $env:GODOT_BIN --headless --fixed-fps 60 --path . --script tests/skull_enemy.gd
+```
+
+The suite checks mesh/material integration, actual charge damage and timing, interruption, wall constraints, pause, death and the base brute visual. It uses a controlled simulation; inspect the [native comparison and short charge recording](../characters/skull-r01/index.html) for visual evidence. Geometry assertions alone do not certify visual fidelity.
+
 Follow [Asset provenance](ASSET_PROVENANCE.md), [LICENSE](../../LICENSE), and [NOTICE](../../NOTICE.md) when changing or redistributing content. The project is for non-commercial learning; third-party components retain their own terms.

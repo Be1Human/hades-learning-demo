@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "revision": "Skull R01 v2",
+  "visual_review": "reviewed",
+  "original_game_fidelity_accepted": false,
+  "scope": "Charging skull enemy only; gate ornaments and combat tuning unchanged by this visual revision.",
+  "capture": "Native Godot Forward+; fixed cameras, frozen AI/physics and controlled actor placement; geometry inspection, not a natural playthrough.",
+  "model": {
+    "path": "assets/characters/skull-r01/skull.glb",
+    "sha256": "33a7ee47381a89e469f25b6c3a69a1a7de19179a824ccd27d1ab30bcbcf0beb4",
+    "triangles": 38242,
+    "mesh_objects": 9,
+    "authored_individual_teeth": 24,
+    "teeth_note": "24 separately shaped teeth are joined into upper/lower runtime mesh groups.",
+    "jaw_pivot": "JawPivot",
+    "vertex_painted": true
+  },
+  "comparisons": [
+    {
+      "title_zh": "正面",
+      "title_en": "Front",
+      "focus_zh": "眼眶、鼻腔、齿列与下颚比例",
+      "focus_en": "Orbits, nasal cavity, teeth and jaw proportions",
+      "matched_camera_and_lighting": true,
+      "before": {
+        "path": "media/before-studio-front.png",
+        "sha256": "d035b3f119362e86d61354cd7e440627167ddb4ada3e3e1213c24d680d11871a",
+        "width": 1440,
+        "height": 900
+      },
+      "after": {
+        "path": "media/after-studio-front.png",
+        "sha256": "02687185f5d75c536502623b6549d295e866203cd6371b796f485e40d1724af9",
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "title_zh": "四分之三侧面",
+      "title_en": "Three-quarter",
+      "focus_zh": "面部腔体深度、颧弓与铰接结构",
+      "focus_en": "Cavity depth, cheek arches and jaw articulation",
+      "matched_camera_and_lighting": true,
+      "before": {
+        "path": "media/before-studio-three-quarter.png",
+        "sha256": "25e5db2b54221774f4f00f1bd6616f269e91c277d7e168ef26cc5ec1e50a8b9b",
+        "width": 1440,
+        "height": 900
+      },
+      "after": {
+        "path": "media/after-studio-three-quarter.png",
+        "sha256": "c3a5b3c4f9eaf3e7501dc53acc830e9d7cdd25a53e4095ce82affcba263769ba",
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "title_zh": "背面",
+      "title_en": "Rear",
+      "focus_zh": "后颅轮廓、骨面分区与缝合线",
+      "focus_en": "Cranial silhouette, bone planes and sutures",
+      "matched_camera_and_lighting": true,
+      "before": {
+        "path": "media/before-studio-rear.png",
+        "sha256": "490df6ff39d8d4c2c59f810da2df614157df02cf97c0a6c50bee6bd0ac10b2ca",
+        "width": 1440,
+        "height": 900
+      },
+      "after": {
+        "path": "media/after-studio-rear.png",
+        "sha256": "5ba874a83195326bb8392a462ca4a603409a732cc4001797457b3c5ae4a47785",
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "title_zh": "实际游戏镜头",
+      "title_en": "Production game camera",
+      "focus_zh": "守卫柱廊中的轮廓和远景可读性",
+      "focus_en": "Silhouette and readability in the colonnade",
+      "matched_camera_and_lighting": true,
+      "before": {
+        "path": "media/before-room-2-game-camera.png",
+        "sha256": "be0fa662ed90886a9cbd8f8eac149342b9525c840c9da221822d70d79ec42430",
+        "width": 1440,
+        "height": 900
+      },
+      "after": {
+        "path": "media/after-room-2-game-camera.png",
+        "sha256": "6128017dd89a3fbcc7a7ae84e870f523d6358ee99056fef691a8008e452e824f",
+        "width": 1440,
+        "height": 900
+      }
+    }
+  ],
+  "first_candidate": [
+    {
+      "path": "media/first-candidate-studio-front.png",
+      "sha256": "c072297ea44cb524971683f70e4944d4797aade854b80b401f6ef4b5c3b02847",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "media/first-candidate-studio-rear.png",
+      "sha256": "6056f908b89950c165a66b899d7f6a6f2760e6ab5b8d13976aa37a18fa700fe6",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "combat_video": {
+    "path": "media/skull-rush.mp4",
+    "sha256": "cdc1ecdcbb0ebdeca30a9d2db9a538de57002d9c83119ed28ce5375ad06e70dc",
+    "duration_seconds": 1.833333,
+    "width": 1280,
+    "height": 800,
+    "fps": 30,
+    "audio": false,
+    "player_health_before": 100,
+    "player_health_after": 88,
+    "fixture_enemy_health": 500,
+    "method": "Controlled single-skull production-scene fixture with explicit starting positions and normal enemy AI; not a natural full run.",
+    "gameplay_assertions": 4,
+    "source_integrity_checks": 22,
+    "additional_skull_source_checks_not_counted": 3
+  },
+  "validation": [
+    {
+      "name": "骷髅专项回归 / Focused skull regression",
+      "passed": 55,
+      "failed": 0,
+      "scope": "受控测试，固定60fps/显式1/60步长；检查模型、姿态、冲撞接触/墙面/中断/受击/死亡等边界。Controlled focused suite, not a natural complete run."
+    },
+    {
+      "name": "原生冲撞与源文件一致性 / Native charge and source integrity",
+      "passed": 26,
+      "failed": 0,
+      "scope": "4项实战断言 + 22项源文件一致性检查；额外3个骷髅文件哈希不计入26。受控敌HP500、指定起点，正常AI接触使主角100→88；非自然整局。4 gameplay + 22 integrity checks; 3 extra skull hashes excluded; controlled fixture, not a natural full run."
+    },
+    {
+      "name": "Public source / skull_enemy",
+      "passed": 55,
+      "failed": 0,
+      "scope": "Godot 4.7.2, headless, fixed 60 fps; controlled simulation. Frontend endings injected for branch coverage; not a natural playthrough."
+    },
+    {
+      "name": "Public source / public_smoke",
+      "passed": 13,
+      "failed": 0,
+      "scope": "Godot 4.7.2, headless, fixed 60 fps; controlled simulation. Frontend endings injected for branch coverage; not a natural playthrough."
+    },
+    {
+      "name": "Public source / combat_smoke",
+      "passed": 11,
+      "failed": 0,
+      "scope": "Godot 4.7.2, headless, fixed 60 fps; controlled simulation. Frontend endings injected for branch coverage; not a natural playthrough."
+    },
+    {
+      "name": "Release PCK / skull_enemy",
+      "passed": 55,
+      "failed": 0,
+      "scope": "Godot 4.7.2, headless, fixed 60 fps; controlled simulation. Frontend endings injected for branch coverage; not a natural playthrough."
+    },
+    {
+      "name": "Release PCK / public_smoke",
+      "passed": 13,
+      "failed": 0,
+      "scope": "Godot 4.7.2, headless, fixed 60 fps; controlled simulation. Frontend endings injected for branch coverage; not a natural playthrough."
+    },
+    {
+      "name": "Release PCK / combat_smoke",
+      "passed": 11,
+      "failed": 0,
+      "scope": "Godot 4.7.2, headless, fixed 60 fps; controlled simulation. Frontend endings injected for branch coverage; not a natural playthrough."
+    }
+  ],
+  "source_files": [
+    {
+      "path": "assets/characters/skull-r01/skull.glb",
+      "sha256": "33a7ee47381a89e469f25b6c3a69a1a7de19179a824ccd27d1ab30bcbcf0beb4"
+    },
+    {
+      "path": "scripts/gameplay/skull_visual.gd",
+      "sha256": "2bb8e23c3884f0a09f25f5071a9802d9c43f11b5cd2fbbcadf4e93d561ddddaf"
+    },
+    {
+      "path": "shaders/skull_bone.gdshader",
+      "sha256": "a8b13afab4b063966c1a98dbcce0f931aa7dc3c7553575a87b71f4b1c275e248"
+    },
+    {
+      "path": "scripts/gameplay/enemy.gd",
+      "sha256": "fbfb4da0444e7a260d93705aa8a26a06f82decbc01d2fa0239051daafbb1ca5a"
+    }
+  ]
+}

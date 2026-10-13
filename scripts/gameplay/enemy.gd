@@ -1,5 +1,6 @@
 extends "res://scripts/demo01/enemy.gd"
-## Uses the existing authored rig. New enemy roles own actual AI and attack clocks.
+## Enemy roles own actual AI clocks; skulls have their own authored mesh and jaw.
+const SkullVisual=preload("res://scripts/gameplay/skull_visual.gd")
 var kind:="brute"
 var move:=""
 var move_index:=0
@@ -16,9 +17,6 @@ func initialize(owner_arena:Node3D,hp:=100.0) -> void:
 	if kind=="boss":visual.scale*=1.35;radius=.68
 	if kind in ["witch","skull"] and is_instance_valid(visual.weapon):visual.weapon.hide()
 	if kind=="witch":visual.scale=Vector3(.8,1.10,.8)
-	if kind=="skull":
-		visual.model.hide()
-		_make_skull()
 	if kind in ["witch","boss"]:
 		for mesh in visual.meshes:
 			for surface in range(mesh.mesh.get_surface_count()):
@@ -29,13 +27,13 @@ func initialize(owner_arena:Node3D,hp:=100.0) -> void:
 	title.position.y=3.15 if kind=="boss" else 2.85;title.font_size=35;title.pixel_size=.006;title.billboard=BaseMaterial3D.BILLBOARD_ENABLED
 	add_child(title)
 
-func _make_skull() -> void:
-	var bone:=StandardMaterial3D.new();bone.albedo_color=Color("c9b78e");bone.roughness=.8
-	var dark:=StandardMaterial3D.new();dark.albedo_color=Color("271e2a")
-	var glow:=StandardMaterial3D.new();glow.albedo_color=Color("ff7942");glow.emission_enabled=true;glow.emission=Color("ff4f21")
-	for spec in [[Vector3(0,1.35,0),Vector3(.85,.8,.75),bone],[Vector3(-.21,1.38,.31),Vector3(.25,.27,.16),dark],[Vector3(.21,1.38,.31),Vector3(.25,.27,.16),dark],[Vector3(-.21,1.38,.39),Vector3(.09,.1,.07),glow],[Vector3(.21,1.38,.39),Vector3(.09,.1,.07),glow],[Vector3(0,1.03,.16),Vector3(.6,.22,.45),bone]]:
-		var part:=MeshInstance3D.new();var sphere:=SphereMesh.new();sphere.radius=.5;sphere.height=1
-		part.mesh=sphere;part.position=spec[0];part.scale=spec[1];part.material_override=spec[2];visual.add_child(part)
+func _create_visual() -> ActorVisual:
+	if kind!="skull":return super._create_visual()
+	var skull:=SkullVisual.new()
+	add_child(skull)
+	skull.position.y=1.35
+	skull.configure("res://assets/characters/skull-r01/skull.glb",true)
+	return skull
 
 func start_move(next_move:String="") -> void:
 	if dead:return
@@ -80,7 +78,13 @@ func tick(delta:float) -> void:
 		super.tick(delta)
 		_check_wall(before,force)
 		return
-	if dead:super.tick(delta);return
+	if dead:
+		super.tick(delta)
+		if kind=="skull":
+			# Allow the hinged jaw and fall to read before the existing corpse hides.
+			visual.scale=death_scale*maxf(.001,1.0-smoothstep(.48,.65,death_clock))
+			visual.set_combat_pose("death",death_clock,false,delta)
+		return
 	clock+=delta;attack_cooldown-=delta
 	flash_left=maxf(0,flash_left-delta);visual.flash(flash_left)
 	var before:=position;var force:float=push_velocity.length()
@@ -125,7 +129,7 @@ func tick(delta:float) -> void:
 				facing=(waypoint-position).normalized();velocity+=facing*1.9
 				visual.rotation.y=atan2(facing.x,facing.z);visual.set_motion("run")
 			else:visual.set_motion("idle")
-	if kind=="skull":visual.position.y=sin(clock*4)*.10
+	if kind=="skull":visual.set_combat_pose(state,clock,attack_applied,delta)
 	move_and_slide();position=arena.constrain_actor(position,radius,before)
 	_check_wall(before,force)
 

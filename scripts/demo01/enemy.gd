@@ -33,10 +33,14 @@ func initialize(owner_arena: Node3D,hp:=100.0) -> void:
 	col.shape=capsule
 	col.position.y=1.2
 	add_child(col)
-	visual=Visual.new()
-	add_child(visual)
-	visual.configure("res://assets/characters/demo01/enemy.glb",true)
+	visual=_create_visual()
 	visual.scale=Vector3.ONE*1.08
+
+func _create_visual() -> ActorVisual:
+	var actor_visual:=Visual.new()
+	add_child(actor_visual)
+	actor_visual.configure("res://assets/characters/demo01/enemy.glb",true)
+	return actor_visual
 
 func cancel_attack() -> void:
 	arena.fx.cancel(telegraph)

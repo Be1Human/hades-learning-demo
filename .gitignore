@@ -2,6 +2,7 @@
 .tools/
 build/
 evidence/
+authoring/
 .publication/
 __pycache__/
 *.pyc

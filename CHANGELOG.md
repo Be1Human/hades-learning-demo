@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.1 — 2026-10-13
+
+- Replace the charging skull's primitive assembly with an authored Blender mesh:
+  carved eye sockets and nasal cavity, cheek arches, 24 teeth, a hinged jaw,
+  painted bone planes, sutures and ember eyes.
+- Add hover, anticipation, charge, recovery, hurt and death poses driven by the
+  existing gameplay state. Keep damage, attack timing and collision rules intact.
+- Load the skull independently instead of retaining an invisible humanoid mesh.
+- Add a focused regression suite and bilingual before/after comparison with a
+  controlled native charge recording. Original-game visual fidelity is not claimed.
+
 ## 0.1.0 — 2026-10-12
 
 - Publish the independently runnable three-room learning Demo.

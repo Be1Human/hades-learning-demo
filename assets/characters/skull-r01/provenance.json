@@ -1,0 +1,21 @@
+{
+  "revision": "skull-r01",
+  "authoring": "Original scripted Blender sculpt; no downloaded skull model, texture, or original-game extraction.",
+  "axis": "Godot Y up, +Z forward",
+  "triangles": 38242,
+  "mesh_objects": 9,
+  "features": [
+    "continuous sculpted cranium",
+    "carved orbital and nasal cavities",
+    "zygomatic arches",
+    "separate hinged mandible",
+    "24 individually shaped teeth",
+    "projected fine sutures",
+    "vertex-painted bone and baked contact tones",
+    "embedded ember eyes"
+  ],
+  "jaw_node": "JawPivot",
+  "asset_sha256": "33a7ee47381a89e469f25b6c3a69a1a7de19179a824ccd27d1ab30bcbcf0beb4",
+  "tool_version": "4.5.3 LTS",
+  "runtime_asset": "assets/characters/skull-r01/skull.glb"
+}

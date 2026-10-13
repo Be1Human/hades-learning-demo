@@ -41,6 +41,8 @@ The project physics tick setting is 120 Hz. Several controlled tests manually ad
 
 `scripts/gameplay/enemy.gd` implements brute, witch, skull, and boss behaviors. Available rigs are reused for some visual variants. `scripts/gameplay/missile.gd` handles actual projectile travel, collisions, reflection, and bloodstone impacts. Damage, stone consumption, pickup, and cooldowns occur in gameplay code; FX are consequences of those events.
 
+The enemy's `_create_visual()` factory selects `scripts/gameplay/skull_visual.gd` for charging skulls. This visual loads `assets/characters/skull-r01/skull.glb` directly, without a hidden humanoid or weapon. Its jaw hinge, hover, charge anticipation, recoil and fall are mesh transforms driven by the enemy state and clock; they are not skeletal animation clips. `shaders/skull_bone.gdshader` combines authored vertex colors with room lights and hit flashes. The enemy still owns facing, collision, health and the 0.55-second charge windup.
+
 ## Effects and lighting
 
 `scripts/integration/fx.gd` adapts the shared `scripts/combat_fx.gd` presentation to the current sword rules and emits committed-attack events. `scripts/fx_events.gd` provides the gameplay event interface. Owners and channels allow interruption, replacement, room cleanup, and lifetime management.
